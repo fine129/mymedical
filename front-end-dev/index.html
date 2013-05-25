@@ -361,7 +361,24 @@ $('div.mental , div.physical , div.social').each(function(){
 });
 
 
-
+function hexFromRGB(r, g, b) {
+    var hex = [
+      r.toString( 16 ),
+      g.toString( 16 ),
+      b.toString( 16 )
+    ];
+    $.each( hex, function( nr, val ) {
+      if ( val.length === 1 ) {
+        hex[ nr ] = "0" + val;
+      }
+    });
+    return hex.join( "" ).toUpperCase();
+  }
+  function refreshColorSpace(r,g,b) {
+    
+      hex = hexFromRGB( r, g, b );
+    $( "div.slidercontainer div.colorspace" ).css( "background-color", "#" + hex );
+  }
 
 </script>
 </body>
