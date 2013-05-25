@@ -680,10 +680,7 @@
 
 	  			}
 
-	  			span.statelevel {
-	  				margin-left:em(5,16);
-	  				color:#ffffff;
-	  			}
+	  			
 
 	  			& > div {
 	  				margin-top: em(6,16) ;
@@ -696,7 +693,7 @@
 			   top:  em(20,16) ;
 			    right:  em(7,16) ;
 			   
-
+				
 			    h4.colortitle {
 			    	margin-bottom: em(10,16);
 			    	text-align: center;
@@ -711,10 +708,11 @@
 			    div.colorspace {
 			    	 background-image: none;
 			    background-color: #777;
-				height:em(80,16);
 				width:em(80,16);
+				height:em(80,16);
 				margin:0;
 				padding:0;
+				@include border-radius(em(3,16));
 
 				@include box-shadow(#729FCF 2px 2px 10px);
 				
@@ -728,7 +726,40 @@
 	     }
 	  	
 	
+		span.statelevel {
+	  				margin-left:em(5,16);
+	  				
+						}
 
+	  				span.level1 {
+	  					color:#e8fbe9;
+	  					
+	  				}
+	  				span.level2 {
+	  					 
+	  					color:#c0fcc5;
+	  					 
+	  				}
+	  				span.level3 {
+	  					 
+	  					color:#7efc8b;
+	  					 
+	  				}
+	  				span.level4 {
+	  					 
+	  					color:#31fc47;
+	  					 
+	  				}
+	  				span.level5 {
+	  					 
+	  					color:#12fd2b;
+	  					 
+	  				}
+	  				span.level6 {
+	  					
+	  					color:#07fd21;
+	  				}
+	  			 
 
 		div.physical div.physicalslider{
 			
