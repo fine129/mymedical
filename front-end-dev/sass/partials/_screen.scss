@@ -1,0 +1,820 @@
+
+	@import "compass/layout";
+	@import "compass/css3";
+	@import "compass/typography";
+	@import "compass/utilities";
+	@import "compass/reset";
+	// @import 'bourbon/bourbon';
+	
+	////////   Functions
+
+	@function em($pxval, $base: 16) {
+  		@return ($pxval / $base) * 1em;
+	}
+
+	/////////////////// mixins //////////////////////
+	  @mixin input-placeholder($color) {
+	  	
+	  &.placeholder {
+	    color: $color; 
+		}
+	  &:-moz-placeholder {
+	    color: $color; 
+		}
+		
+		&::-moz-placeholder {  /* Firefox 19+ */
+	   color: $color;  
+		}
+	  &:-ms-input-placeholder {
+	    color: $color; 
+		}
+	  &::-webkit-input-placeholder {
+	    color: $color; 
+		} 
+	}
+
+	////// triangle mixin
+
+	@mixin triangle ($size, $color, $direction) {
+  height: 0;
+  width: 0;
+
+  @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
+    border-color: transparent;
+    border-style: solid;
+    border-width: $size / 2;
+
+    @if $direction == up {
+      border-bottom-color: $color;
+
+    } @else if $direction == right {
+      border-left-color:   $color;
+
+    } @else if $direction == down {
+      border-top-color:    $color;
+
+    } @else if $direction == left {
+      border-right-color:  $color;
+    }
+  }
+
+  @else if ($direction == up-right) or ($direction == up-left) {
+    border-top: $size solid $color;
+
+    @if $direction == up-right {
+      border-left:  $size solid transparent;
+
+    } @else if $direction == up-left {
+      border-right: $size solid transparent;
+    }
+  }
+
+  @else if ($direction == down-right) or ($direction == down-left) {
+    border-bottom: $size solid $color;
+
+    @if $direction == down-right {
+      border-left:  $size solid transparent;
+
+    } @else if $direction == down-left {
+      border-right: $size solid transparent;
+    }
+  }
+}
+
+
+	/////// unuislider mixin
+
+	@mixin what-slider($viewablehandlecolor,$viewablehandlebordercolor,$viewablehandlewidth,$viewablehandlheight,
+		$barheight_h,$barwidth_h,$connectcolor) {
+		& {
+			@include box-sizing(border-box);
+			display:block;
+			cursor:default;
+			position:relative;
+			border:  em(1,16)  solid #908d84;
+			border-radius:  em(3,16) ;
+			* {
+				@include box-sizing(border-box);
+				display:block;
+				cursor:default;
+			}
+			
+			a {
+				position: absolute;
+			z-index: 1;
+			}
+			
+			a:nth-child(2) {
+				background: inherit !important;
+			}
+			
+			&.vertical a {
+				width: 100%;
+				bottom: 0;
+			}
+			
+			&.horizontal a {
+					height: 100%;
+					right: 0;
+				}
+		}
+
+
+		
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			&:before,
+			body.TOUCH,
+			& div {
+				-ms-touch-action: none;
+			}
+			&:before {
+				display: block;
+				position: absolute;
+				width: 150%;
+				left: -25%;
+				height: 400%;
+				top: -150%;
+				content: "";
+				z-index: -1;
+			}
+			&.vertical:before {
+				width: 400%;
+				left: -150%;
+				height: 150%;
+				top: -25%;
+			}
+		}
+		
+		&.connect a,
+		&.connect.lower {
+			background: #ffffff;
+
+		}
+		&,
+		&.connect.lower a {
+
+			@if $connectcolor == red {
+
+				// needs latest Compass, add '@import "compass"' to your scss
+				@include filter-gradient(#ff1a00, #ff1a00, horizontal); // IE6-8
+				// IE9 SVG, needs conditional override of 'filter' to 'none'
+				$experimental-support-for-svg: true;
+				@include background-image(linear-gradient(left,  rgba(255,26,0,0) 0%,rgba(255,26,0,1) 100%));
+			}
+			@else if $connectcolor == green {
+				// needs latest Compass, add '@import "compass"' to your scss
+				@include filter-gradient(#006e2e, #006e2e, horizontal); // IE6-8
+				// IE9 SVG, needs conditional override of 'filter' to 'none'
+				$experimental-support-for-svg: true;
+				@include background-image(linear-gradient(left,  rgba(0,110,46,0) 0%,rgba(0,110,46,0.91) 100%));
+
+
+			} @else if $connectcolor == blue{
+				// needs latest Compass, add '@import "compass"' to your scss
+				@include filter-gradient(#b2e1ff, #2f7fce, horizontal); // IE6-8
+				// IE9 SVG, needs conditional override of 'filter' to 'none'
+				$experimental-support-for-svg: true;
+				@include background-image(linear-gradient(left,  rgba(178,225,255,0) 0%,rgba(47,127,206,1) 100%));
+			}
+			
+			// background: $connectcolor;
+			//box-shadow: inset  em(0,16)   em(1,16)   em(7,16)  #b6a8a8;
+		}
+		&.disabled,
+		&.disabled.connect.lower a {
+			background: #ccc;
+			box-shadow: none;
+		}
+		& div {
+			height: $viewablehandlheight;
+			width: $viewablehandlewidth;
+			@if $connectcolor == red {
+			@include triangle($viewablehandlewidth,#EF2929,down-left);
+			//border:  em(1,16)  solid #EF2929;
+			} @else if $connectcolor == green {
+			//border:  em(1,16)  solid #8AE234;
+			@include triangle($viewablehandlewidth,#8AE234,down-left);
+			} @else if $connectcolor == blue {
+				//border:  em(1,16)  solid #729FCF;
+				@include triangle($viewablehandlewidth,#729FCF,down-left);
+				// @include box-shadow(#729FCF 2px 2px 10px);
+			}
+
+			cursor:pointer;
+
+			//@include border-radius( em(2,16) );
+
+		}
+		&.disabled div {
+			background: transparent;
+		}
+		&.horizontal {
+			width: $barwidth_h ;
+			height: $barheight_h;
+			cursor:pointer;
+		}
+		&.horizontal div {
+			margin:  em(5,16)  0 0 - em(9,16) ;
+		}
+		&.vertical {
+			width:  em(10,16) ;
+			height:  em(300,16) ;
+		}
+		&.vertical div {
+			margin: - em(9,16)  0 0 - em(5,16) ;
+		}
+	}
+
+
+	//////////////////  page style here /////////////////////
+
+		div.clear {
+			clear:both;
+		}
+		div.headerbackground {
+			position:fixed;
+			height: em(44,16) ;
+			width:100%;
+			background:#95abc1;
+			z-index:-99;
+		}
+
+		:focus {
+			outline: 0;
+		}
+		body {
+			background:#CCE8CF;
+			line-height: 1;
+			color: black;
+			font-family:Helvetica, sans-serif;
+		}
+		
+		ol, ul {
+			list-style: none;
+		}
+		
+		a {
+			text-decoration:none;
+			cursor:pointer;
+		}
+		#container > header {
+		    background: #95abc1;
+			height:  em(44,16) ;
+		    color: #ffffff;
+		  
+		}
+		  
+	 // menu category style here
+		
+		.stretched {
+			$stretch-color:#c4c7cb;
+	   		border:  em(1,16)  solid $stretch-color;
+		    @include border-radius( em(3,16) );
+		    background-color:$stretch-color;
+		}
+
+		div.hidenav {
+			left:-999em;
+		}
+		
+		div.shownav{
+			left:auto;
+		}
+
+		div.showstate {
+			left:-8em;
+		}
+		
+		#menuwrapper {
+			
+		a {
+			text-decoration:none;
+			color:#fff;
+			font-size:1em;
+		} 
+		
+		
+		
+		#logowrapper {
+			text-align:left; 
+			width:auto;
+			height:auto;
+	 		float:left;
+			//border:   em(1,16)  solid #ffffff;
+			font-size:1em;
+			padding: em(8,16) ;
+			margin: em(6,16)  0  em(6,16)  0 ;
+			@include border-radius( em(3,16) );
+			// needs latest Compass, add '@import "compass"' to your scss
+			background-color: rgb(175,192,208); // Old browsers
+			@include filter-gradient(#afc0d0, #d8e2e9, vertical); // IE6-8
+			// IE9 SVG, needs conditional override of 'filter' to 'none'
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top,  rgba(175,192,208,1) 0%,rgba(216,226,233,1) 100%));
+			
+			&.ahover {
+				color:#ffffff;
+				//border:   em(1,16)  solid #C31C24;
+				background:#FF9900;
+			}
+			
+			&.anormal {
+				color:#ffffff;
+			}
+		}
+		
+		
+		 
+		
+		#navwrapper {
+			position:absolute;
+			 
+			width:27.75em;
+			height:12em;
+			background:#95abc1; 
+			line-height:1.89em;
+			top:3.25em;
+			//border:  em(1,16)  solid #95abc1;
+			@include border-radius( em(3,16) );
+		}
+		
+
+	 	
+		ul {
+			display: block;
+			line-height:1.6875em;
+			margin:0;
+			padding:0.375em 0.625em 0.375em 0.625em ;
+			 
+		}
+		ul li { 
+			text-align: left; 
+			display:  block;
+			height:1.7875em;
+			font-size:1em;
+			//font-weight:bold;
+			 line-height:1.6875em;
+			overflow:hidden;
+			padding:0;
+			margin-bottom:0.25em ;
+			position:relative;
+			@include box-sizing(border-box);
+		}
+		
+		
+		
+		li a {
+		  	display:block;
+			float:left;
+			@include box-sizing(border-box);
+			cursor:pointer;
+		 	line-height:1.6875em;
+			height:1.7875em;
+			width:92%;
+			
+			$default-text-shadow-color: rgba(#ffffff, 0.6);
+			$default-text-shadow-blur:  em(3,16) ;
+			$default-text-shadow-v-offset:  em(1,16) ;
+			// @include text-shadow(rgba(blue, 0.2)  em(1,16)   em(1,16)  0, rgba(blue, 0.2)  em(2,16)   em(2,16)  0, rgba(blue, 0.2)  em(3,16)   em(3,16)  0); 
+			@include single-text-shadow;
+			&:hover {
+				color: #333333; 
+				$default-text-shadow-color: rgba(#333333, 0.6);
+				@include single-text-shadow;
+				@extend .stretched;
+			  	//@include stretch;
+			}
+			
+		
+		}
+		
+		li a.ahover {
+			color: #333333; 
+			@extend .stretched;
+		}
+		
+		span.stroke {
+			@include inline-block; 
+			@include box-sizing(border-box);
+			float:right;
+			width:8%;
+			background:url('../images/stroke-green.png');
+			height:1.6875em;
+			width:1em;
+			border:none;
+			background-repeat:no-repeat;
+			background-position: center center;
+			cursor:pointer;
+			text-align:right;
+			}
+			
+		span.stroke:hover {
+			@include inline-block; 
+			@include box-sizing(border-box);
+			float:right;
+			width:8%;
+			height:1.6875em;
+			width:1em;
+			border:none;
+			background:url('../images/stroke-yellow.png');
+			background-repeat:no-repeat;
+			background-position: center center;
+			cursor:pointer;
+			text-align:right;
+			
+			}	
+			
+		span.box {
+			@include inline-block; 
+			@include box-sizing(border-box);
+			float:right;
+			width:8%;
+			background:url('../images/thinbox-white.png');
+			height:1.6875em;
+			width:1em;
+			border:none;
+			background-repeat:no-repeat;
+			background-position: center center;
+			cursor:pointer;
+			text-align:right;
+				
+			}
+		span.box:hover {
+			@include inline-block; 
+			@include box-sizing(border-box);
+			float:right;
+			width:8%;
+			background:url('../images/thinbox-yellow.png');
+			height:1.6875em;
+			width:1em;
+			border:none;
+			background-repeat:no-repeat;
+			background-position: center center;
+			cursor:pointer;
+			text-align:right;
+			
+		}
+		div.menufooter {
+			clear:both;
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0;
+			height:auto;
+			width:auto;
+			margin:0;
+			padding-left:0.9em;
+			padding-right:0.9em;
+			line-height:1.9em;
+			font-size:0.875em;
+		  	font-weight:bold;
+			background-color:#c0cdda;
+			@include border-radius( em(3,16) );
+		}
+		
+		span.numbertitle {
+			font-size:1.4em;
+			margin-right:0.25em;
+			//font-weight:bold;
+		}
+	}
+
+		div.menutooltip {
+			position:absolute;
+					
+		}
+	// menu search box style here 
+
+		  div.headersearchbar {
+			position:relative;
+			
+			div.menusearchbox {
+				position:relative;
+		  		
+		  		input {
+				   @include inline-block; 
+				   @include input-placeholder(#95abc1); 
+				   border:  em(1,16)  solid #c5d2dc;
+				   height: em(27,16) ;
+				   width:60%;
+			  	   margin: em(7,16)  0  em(8,16)  0;
+		  		   padding: em(2,16)   em(26,16)   em(2,16)   em(2,16) ;
+		  		  // padding-right: em(26,16) ;	
+				   background: #ffffff;
+				   //background: linear-gradient(top, #95abc1 50%,#ededed 80%,#95abc1 100%);
+				   border-radius:  em(2,16) ;
+				   box-shadow:  em(1,16)   em(1,16)   em(3,16)  hsla(0, 0%, 16.6667%, 0.1);
+		  		   z-index:666;
+		  			 @include box-sizing(border-box);
+		  		}
+		  		
+		  		input.length95 {
+					width:95%;
+		  		}
+			}
+			
+			button.searchbtn {
+				position:absolute;
+				@include inline-block; 
+				vertical-align:middle;
+				//color:transparent;
+				height: em(25,16) ;
+				width: em(25,16) ;
+				background:url('../images/searchbtn-blue.png');
+				cursor:pointer;
+				top: em(9,16) ;
+				padding:0;
+				margin:1;
+				border:0;
+				margin-left:- em(26,16) ;
+				 @include box-sizing(border-box);
+			}
+	  }	
+		
+	  ////////////////////// middle logo style here
+	  div.healthystate {
+		position:relative;
+	  }
+	  div.logoimg {
+		@include box-sizing(border-box);
+			position:relative;
+			width: em(110,16) ;
+			height: em(44,16) ;
+			background:url('../images/logo-healthystate.png');
+			 
+			border:none;
+			background-repeat:no-repeat;
+			background-position: center center;
+			cursor:pointer;
+	  		
+	  }
+	  
+	  div.statebar {
+	  		@include box-sizing(border-box);
+			position:absolute;
+	  		top:3.25em;
+
+	  		height:18em;
+	  		line-height:1.5em;
+	  		font-size:1em;
+	  		width:20em;
+	  		padding:0.1875em;
+	  		margin:0;
+	  		background-color:#95abc1;
+	  		@include border-radius( em(3,16) );
+	  		
+	  		h3 {
+	  			 
+	  			text-align: center;
+				font-size: em(13,16) ;
+	  			line-height: em(13,16) ;
+	  			$default-text-shadow-color: rgba(#777777, 0.6);
+				$default-text-shadow-blur: 3px;
+				$default-text-shadow-v-offset: 1px;
+				 @include single-text-shadow;
+	  		}
+
+
+	  }
+	  
+	  div.buttonhere {
+			position:relative;
+	  		width:auto;
+	  		height: em(25,16) ;
+	  		margin:0;
+	  		margin-left:3%;
+	  		margin-right:3%;
+	  		padding:0;
+	  		border:none;
+	  		
+	  }
+	  a.homebutton {
+	  		display:block;
+	  		//position:absolute;
+	  		@include border-radius( em(3,16) );
+	  		text-align:center;
+	  		
+	  		$default-text-shadow-color: rgba(#777777, 0.6);
+			$default-text-shadow-blur:  em(3,16) ;
+			$default-text-shadow-v-offset:  em(1,16) ;
+	  		@include single-text-shadow;
+			@include stretch;
+	  		
+	  		background-color: rgb(175,192,208); // Old browsers
+			@include filter-gradient(#afc0d0, #d8e2e9, vertical); // IE6-8
+			// IE9 SVG, needs conditional override of 'filter' to 'none'
+			$experimental-support-for-svg: true;
+			@include background-image(linear-gradient(top,  rgba(175,192,208,1) 0%,rgba(216,226,233,1) 100%));
+			
+			&:hover {
+				color: #333333; 
+				$default-text-shadow-color: rgba(#333333, 0.6);
+				@include single-text-shadow;
+				@extend .stretched;
+			  	//@include stretch;
+			}
+	  		
+	  }
+	  
+	  div.slidercontainer {
+			position:relative;
+	  		height:auto;
+	  		width:auto;
+	  		margin:0.0625em;
+	  		margin-left:em(5,16);
+	  		margin-right:em(5,16);
+	  		//font-size: 0.8em;
+	  		line-height: 1em;
+
+	  		padding:0;
+	  		//background:#ffffff;
+	  		border:none;
+	  		@include border-radius( em(3,16) );
+	  	
+			.mental, .physical, .social {
+			    float: left;
+			    clear: both;
+			    width: em(200,16);
+			    margin:  em(5,16) ;
+			    margin-bottom:  em(35,16) ;
+	  			height: em(10,16) ;
+	  			//background:#ffffff;
+
+	  			span.slidertitle {
+					color:#777;
+	  				text-align: left;
+					font-size:  em(13,16) ;
+					line-height:  em(13,16) ;
+					font-weight: normal;
+					$default-text-shadow-color: rgba(#b4b2b2, 0.6);
+					$default-text-shadow-blur:  em(3,16) ;
+					$default-text-shadow-v-offset:  em(1,16) ;
+					// @include text-shadow(rgba(blue, 0.2)  em(1,16)   em(1,16)  0, rgba(blue, 0.2)  em(2,16)   em(2,16)  0, rgba(blue, 0.2)  em(3,16)   em(3,16)  0); 
+					@include single-text-shadow;
+					em.titlefirstletter {
+						font-weight: bold;
+						font-size: em(16,16);
+
+					}
+
+					span.titlepart {
+						margin-left: - em(4,16);
+					}
+	  			}
+
+	  			span.slidervalue {
+	  				position:absolute;
+	  				@include inline-block;
+
+	  				right:em(120,16);
+	  				font-size:  em(13,16) ;
+					line-height:  em(13,16) ;
+					font-weight: normal;
+					vertical-align: baseline;
+					text-align: right;
+					margin-top:em(6,16);
+	  			}
+
+	  			em.value {
+	  				color:#ffffff;
+
+	  			}
+
+	  			span.statelevel {
+	  				margin-left:em(5,16);
+	  				color:#ffffff;
+	  			}
+
+	  			& > div {
+	  				margin-top: em(6,16) ;
+	  			}
+			  }
+		  	div.scoremonitor {
+		  		position:absolute;
+				width:  em(80,16) ;
+			    height:  em(100,16) ;
+			   top:  em(20,16) ;
+			    right:  em(7,16) ;
+			   
+
+			    h4.colortitle {
+			    	margin-bottom: em(10,16);
+			    	text-align: center;
+			    	font-size: em(12,16);
+					line-height: em(12,16);
+			    	$default-text-shadow-color: rgba(#777777, 0.6);
+			$default-text-shadow-blur:  em(3,16) ;
+			$default-text-shadow-v-offset:  em(1,16) ;
+			@include single-text-shadow;
+			    }
+
+			    div.colorspace {
+			    	 background-image: none;
+			    background-color: #777;
+				height:em(80,16);
+				width:em(80,16);
+				margin:0;
+				padding:0;
+
+				@include box-shadow(#729FCF 2px 2px 10px);
+				
+			    }
+		  	}
+		 	
+		  	 div.sliderfooter {
+
+		  	 }
+	  		
+	     }
+	  	
+	
+
+
+		div.physical div.physicalslider{
+			
+			@include what-slider(
+				#fff,#fff, em(20,16) , em(10,16) ,
+		 em(5,16) , em(200,16) ,red);
+			width:em(200,16);
+			height:auto;
+	  		}
+		
+		
+		div.mental div.mentalslider {
+			@include what-slider(#fff,#fff, em(20,16) , em(10,16) ,
+		 em(5,16) , em(200,16) ,green);
+		}
+		
+		div.social div.socialslider {
+			@include what-slider(#fff,#fff, em(20,16) , em(10,16) ,
+		 em(5,16) , em(200,16) ,blue);
+		}
+		
+		
+	  
+	  hr.homehr {
+	  	border:none;
+	  		border-top:  em(1,16)  dashed #ffffff;
+		  color: #c3d1dc;
+		  background-color: #c3d1dc;
+		  height:  em(0,16) ;
+		  width:100%;
+	  	margin-top:0.1875em;
+	  	padding:0;
+		  
+	  }
+	 
+	// userpanel style here
+		
+		div.panelcontainer {
+			float:right;
+			width:65%;
+			height: em(44,16) ;
+			text-align:center;
+			margin:0;
+			padding:0;
+			
+
+		span.versionbutton {
+				@include inline-block;
+				font-size: em(16,16) ;
+				font-weight:normal;
+				margin: em(4,16)   em(2,16)   em(6,16)   em(2,16) ;
+				padding: em(3,16)   em(2,16)   em(5,16)   em(2,16) ;
+				height: em(18,16) ;
+				background-color: #95abc1;
+				//border:  em(1,16)  solid #fff;
+				color: #fff;
+				cursor: pointer;
+				//text-shadow: 0  em(1,16)  #fff;
+				white-space: nowrap;
+			}
+			
+		#versionwrapper {
+			position:absolute;
+		}
+		   div.hidenav {
+			left:-999em;
+			}
+		
+		   div.shownav{
+			left:auto;
+			}
+		}
+	   
+	   
+	////////// some test code
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--[if lt IE 9]>
+  
+<![endif]-->
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+<link href="stylesheets/unsemantic-grid-responsive.css" rel="stylesheet" />
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+  
+<![endif]-->
+<link href="stylesheets/screen.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="stylesheets/jquery-qtip2.01.css" />
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<title>Insert title here</title>
+
+</head>
+<body id="home">
+	<div class="headerbackground"></div>
+	<!--   <div id="headerbackground"></div> -->
+	<div id="container" class="grid-container">
+		<!-- the header and navigation -->
+		<header role="banner" class="group grid-100 mobile-grid-100 grid-parent">
+
+			<!-- LOGO here -->
+			<div id="logo-menu-search" class="grid-45 mobile-grid-45 grid-parent">
+			 
+			<div class="grid-30 mobile-grid-30 ">
+			<div id="menuwrapper">
+			<div id="logowrapper" class="gradient">
+			First
+			</div>
+			
+		 	<div id="navwrapper" class="hidenav" >
+				 <div class="menucaret"></div>
+						  <ul id="nav" class="submenu">
+							<li class="menuitem"><a href="#"><span class="numbertitle">1</span>Get answers for  general questions<span class="stroke"></span></a> </li>
+							<li class="menuitem"><a href="#"><span class="numbertitle">2</span>Find people like you and get useful information</a> </li>
+							<li class="menuitem"><a href="#"><span class="numbertitle">3</span>Find a healthcare professionaland consult him</a> </li>
+							<li class="menuitem"><a href="#"><span class="numbertitle">4</span>Waiting for recovery and enjoy better life<span class="stroke"></span></a>  </li>
+						</ul>  
+					<div class="menufooter">how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients  </div> 
+				</div> 
+				 
+				</div> 
+				</div>
+				
+			   <div class="grid-70 mobile-grid-70 pull-20 ">
+			   <div class="headersearchbar">
+			   <form>
+			   <div class="menusearchbox"> <input type="text" maxlength="1000" name="search" autocomplete="off" class="field" placeholder="Find answers of your interest" />
+			   <button class="searchbtn submit" type="submit" ></button> 
+			    </div>
+			    </form>
+			    </div>
+			    </div>
+			</div>
+
+			<!-- middle area -->
+			<div id="homepage" class="grid-10 mobile-grid-10 grid-parent">
+				<img src='images/logo-healthyway.png'/></div>
+
+			<!-- userpanel -->
+			<div id="userpanel" class="grid-45 mobile-grid-45 grid-parent">
+				<div class="panelcontainer">
+					<span class="versionbutton">  General </span>
+					<div id="versionwrapper" class="hidenav" >
+				 <div class="menucaret"></div>
+						  <ul id="nav" class="submenu">
+							<li class="menuitem"><a href="#">General</a></li>
+							<li class="menuitem"><a href="#">Patients Related</a></li>
+							<li class="menuitem"><a href="#">Healthcare Giver</a></li>
+						</ul>  
+					<div class="menufooter">how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients  </div> 
+				</div> 
+				<span class="versionbutton"><img src="images/uprofile.jpg"></span>
+				</div>	
+				
+				
+			</div>
+		</header>
+
+		<!-- the content -->
+		<div id="content" role="main"
+			class="grid-75 mobile-grid-100 grid-parent">
+			<!-- left content column -->
+			<div id="questions" class="grid-75 mobile-grid-75 grid-parent">
+				<div id="questionlib" class="grid-100 mobile-grid-100">
+				
+					<a class="parent">
+					<span class="img"></span>
+					</a>
+					
+					
+					</div>
+				<div id="hotquestions" class="grid-100 mobile-grid-100">
+					hotquestions</div>
+				<div id="featuredquestions" class="grid-100 mobile-grid-100">
+					featuredquestions</div>
+			</div>
+			<!-- right content column -->
+			<div id="recommend" class="grid-25 mobile-grid-25">"recommend"
+			</div>
+		</div>
+		<!-- the sidebar -->
+
+		<aside class="grid-25">
+			<section role="complementary">
+				<div class="sideBlock unSung">
+					<h1>Unsung heroes...</h1>
+				</div>
+			</section>
+			<section role="complementary">
+				<div class="sideBlock overHyped">
+					<h1>Overhyped nonsense...</h1>
+				</div>
+			</section>
+		</aside>
+
+
+		<!-- the footer -->
+		<footer role="contentinfo" class=" grid-100 mobile-grid-100">
+			<p>
+				Note: our opinion is absolutely correct. You are wrong, even if you
+				think you are right. That’s a fact. Deal with it. <span> Made
+					by <a href="http://benfrain.com">benfrain.com</a>.
+				</span><span> Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP
+						file</a></span>
+			</p>
+		</footer>
+
+	</div>
+
+<!-- content here -->
+<script type="text/javascript" src="javascripts/jquery171.js"></script>
+<script type="text/javascript" src="javascripts/all.js"></script>
+ 
+<!-- Notice we only include the minified script here. You can include the non-minified version, just don't include both! -->
+<script type="text/javascript" src="javascripts/jquery-qtip2.01.js"></script>
+<script>
+	function shownav(){
+		$("#navwrapper").removeClass("hidenav").addClass("shownav");
+		$("#logowrapper").addClass('ahover').removeClass('anormal');
+	}
+	function hidenav(){
+		$("#navwrapper").removeClass("shownav").addClass("hidenav");
+		$("#logowrapper").addClass('anormal').removeClass('ahover');
+
+	}
+    $(document).ready(function(){
+    	var cfg = {over:shownav,out:hidenav,selector:null,timeout:300,sensitivity:30} ;
+    	$("#menuwrapper").hoverIntent( cfg);
+    	
+    	//search bar auto lengthening
+    	$("div.menusearchbox input").mousedown(function(){
+    		if($(this).data('lengthy') != true) {
+    		$(this).addClass('length95');
+    		$(this).data('lengthy',true);
+    		}
+    	});
+    	
+    	$("div.menusearchbox input").blur(function(e){
+    		if($(this).data('lengthyclick')) {
+    			$('div.menusearchbox form').submit();
+    			$(this).data('lengthy',false);
+    			 
+    		}
+    		if($(this).data('lengthy')) {
+    			$(this).removeClass('length95');
+    			$(this).data('lengthy',false);
+    		}
+    		
+    	});
+    	
+    	$("div.menusearchbox button").mousedown(function(e){
+    		 if($('div.menusearchbox input').data('lengthy')) {
+    			 $('div.menusearchbox input').data('lengthyclick',true);
+    		 } 
+    		 else {
+    			 $('div.menusearchbox input').data('lengthyclick',false);
+    		 }
+    	})
+    	
+ });   
+</script>
+</body>
+
+</html>

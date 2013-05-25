@@ -1,0 +1,1042 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby200/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 231, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.clear {
+  clear: both;
+}
+
+/* line 234, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headerbackground {
+  position: fixed;
+  height: 2.75em;
+  width: 100%;
+  background: #95abc1;
+  z-index: -99;
+}
+
+/* line 242, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 245, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+body {
+  background: #CCE8CF;
+  line-height: 1;
+  color: black;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 252, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 256, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 260, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#container > header {
+  background: #95abc1;
+  height: 2.75em;
+  color: #ffffff;
+}
+
+/* line 269, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+.stretched, #menuwrapper li a:hover, #menuwrapper li a.ahover, a.homebutton:hover {
+  border: 0.0625em solid #c4c7cb;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  -ms-border-radius: 0.1875em;
+  -o-border-radius: 0.1875em;
+  border-radius: 0.1875em;
+  background-color: #c4c7cb;
+}
+
+/* line 276, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.hidenav {
+  left: -999em;
+}
+
+/* line 280, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.shownav {
+  left: auto;
+}
+
+/* line 284, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.showstate {
+  left: -8em;
+}
+
+/* line 290, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+}
+/* line 298, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper #logowrapper {
+  text-align: left;
+  width: auto;
+  height: auto;
+  float: left;
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.375em 0 0.375em 0;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  -ms-border-radius: 0.1875em;
+  -o-border-radius: 0.1875em;
+  border-radius: 0.1875em;
+  background-color: #afc0d0;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFAFC0D0', endColorstr='#FFD8E2E9');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FmYzBkMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4ZTJlOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #afc0d0), color-stop(100%, #d8e2e9));
+  background-image: -webkit-linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+  background-image: -moz-linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+  background-image: -o-linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+  background-image: linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+}
+/* line 315, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper #logowrapper.ahover {
+  color: #ffffff;
+  background: #FF9900;
+}
+/* line 321, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper #logowrapper.anormal {
+  color: #ffffff;
+}
+/* line 329, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper #navwrapper {
+  position: absolute;
+  width: 27.75em;
+  height: 12em;
+  background: #95abc1;
+  line-height: 1.89em;
+  top: 3.25em;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  -ms-border-radius: 0.1875em;
+  -o-border-radius: 0.1875em;
+  border-radius: 0.1875em;
+}
+/* line 343, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper ul {
+  display: block;
+  line-height: 1.6875em;
+  margin: 0;
+  padding: 0.375em 0.625em 0.375em 0.625em;
+}
+/* line 350, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper ul li {
+  text-align: left;
+  display: block;
+  height: 1.7875em;
+  font-size: 1em;
+  line-height: 1.6875em;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 0.25em;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 366, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper li a {
+  display: block;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+  line-height: 1.6875em;
+  height: 1.7875em;
+  width: 92%;
+  text-shadow: 0px 0.0625em 0.1875em rgba(255, 255, 255, 0.6);
+}
+/* line 380, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper li a:hover {
+  color: #333333;
+  text-shadow: 0px 0.0625em 0.1875em rgba(51, 51, 51, 0.6);
+}
+/* line 391, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper li a.ahover {
+  color: #333333;
+}
+/* line 396, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper span.stroke {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  width: 8%;
+  background: url("../images/stroke-green.png");
+  height: 1.6875em;
+  width: 1em;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  text-align: right;
+}
+/* line 411, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper span.stroke:hover {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  width: 8%;
+  height: 1.6875em;
+  width: 1em;
+  border: none;
+  background: url("../images/stroke-yellow.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  text-align: right;
+}
+/* line 427, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper span.box {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  width: 8%;
+  background: url("../images/thinbox-white.png");
+  height: 1.6875em;
+  width: 1em;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  text-align: right;
+}
+/* line 442, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper span.box:hover {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  width: 8%;
+  background: url("../images/thinbox-yellow.png");
+  height: 1.6875em;
+  width: 1em;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  text-align: right;
+}
+/* line 457, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper div.menufooter {
+  clear: both;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+  line-height: 1.9em;
+  font-size: 0.875em;
+  font-weight: bold;
+  background-color: #c0cdda;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  -ms-border-radius: 0.1875em;
+  -o-border-radius: 0.1875em;
+  border-radius: 0.1875em;
+}
+/* line 475, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+#menuwrapper span.numbertitle {
+  font-size: 1.4em;
+  margin-right: 0.25em;
+}
+
+/* line 482, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.menutooltip {
+  position: absolute;
+}
+
+/* line 488, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar {
+  position: relative;
+}
+/* line 491, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox {
+  position: relative;
+}
+/* line 494, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox input {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  border: 0.0625em solid #c5d2dc;
+  height: 1.6875em;
+  width: 60%;
+  margin: 0.4375em 0 0.5em 0;
+  padding: 0.125em 1.625em 0.125em 0.125em;
+  background: #ffffff;
+  border-radius: 0.125em;
+  box-shadow: 0.0625em 0.0625em 0.1875em rgba(43, 43, 43, 0.1);
+  z-index: 666;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 18, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox input.placeholder {
+  color: #95abc1;
+}
+/* line 21, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox input:-moz-placeholder {
+  color: #95abc1;
+}
+/* line 25, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #95abc1;
+}
+/* line 28, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox input:-ms-input-placeholder {
+  color: #95abc1;
+}
+/* line 31, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox input::-webkit-input-placeholder {
+  color: #95abc1;
+}
+/* line 511, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar div.menusearchbox input.length95 {
+  width: 95%;
+}
+/* line 516, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.headersearchbar button.searchbtn {
+  position: absolute;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  height: 1.5625em;
+  width: 1.5625em;
+  background: url("../images/searchbtn-blue.png");
+  cursor: pointer;
+  top: 0.5625em;
+  padding: 0;
+  margin: 1;
+  border: 0;
+  margin-left: -1.625em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 535, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.healthystate {
+  position: relative;
+}
+
+/* line 538, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.logoimg {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  width: 6.875em;
+  height: 2.75em;
+  background: url("../images/logo-healthystate.png");
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+/* line 552, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.statebar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 3.25em;
+  height: 18em;
+  line-height: 1.5em;
+  font-size: 1em;
+  width: 20em;
+  padding: 0.1875em;
+  margin: 0;
+  background-color: #95abc1;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  -ms-border-radius: 0.1875em;
+  -o-border-radius: 0.1875em;
+  border-radius: 0.1875em;
+}
+/* line 566, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.statebar h3 {
+  text-align: center;
+  font-size: 0.8125em;
+  line-height: 0.8125em;
+  text-shadow: 0px 1px 3px rgba(119, 119, 119, 0.6);
+}
+
+/* line 580, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.buttonhere {
+  position: relative;
+  width: auto;
+  height: 1.5625em;
+  margin: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 0;
+  border: none;
+}
+
+/* line 591, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+a.homebutton {
+  display: block;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  -ms-border-radius: 0.1875em;
+  -o-border-radius: 0.1875em;
+  border-radius: 0.1875em;
+  text-align: center;
+  text-shadow: 0px 0.0625em 0.1875em rgba(119, 119, 119, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #afc0d0;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFAFC0D0', endColorstr='#FFD8E2E9');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FmYzBkMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4ZTJlOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #afc0d0), color-stop(100%, #d8e2e9));
+  background-image: -webkit-linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+  background-image: -moz-linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+  background-image: -o-linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+  background-image: linear-gradient(top, #afc0d0 0%, #d8e2e9 100%);
+}
+/* line 609, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+a.homebutton:hover {
+  color: #333333;
+  text-shadow: 0px 0.0625em 0.1875em rgba(51, 51, 51, 0.6);
+}
+
+/* line 619, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer {
+  position: relative;
+  height: auto;
+  width: auto;
+  margin: 0.0625em;
+  margin-left: 0.3125em;
+  margin-right: 0.3125em;
+  line-height: 1em;
+  padding: 0;
+  border: none;
+  -webkit-border-radius: 0.1875em;
+  -moz-border-radius: 0.1875em;
+  -ms-border-radius: 0.1875em;
+  -o-border-radius: 0.1875em;
+  border-radius: 0.1875em;
+}
+/* line 634, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental, div.slidercontainer .physical, div.slidercontainer .social {
+  float: left;
+  clear: both;
+  width: 12.5em;
+  margin: 0.3125em;
+  margin-bottom: 2.1875em;
+  height: 0.625em;
+}
+/* line 643, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental span.slidertitle, div.slidercontainer .physical span.slidertitle, div.slidercontainer .social span.slidertitle {
+  color: #777;
+  text-align: left;
+  font-size: 0.8125em;
+  line-height: 0.8125em;
+  font-weight: normal;
+  text-shadow: 0px 0.0625em 0.1875em rgba(180, 178, 178, 0.6);
+}
+/* line 654, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental span.slidertitle em.titlefirstletter, div.slidercontainer .physical span.slidertitle em.titlefirstletter, div.slidercontainer .social span.slidertitle em.titlefirstletter {
+  font-weight: bold;
+  font-size: 1em;
+}
+/* line 660, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental span.slidertitle span.titlepart, div.slidercontainer .physical span.slidertitle span.titlepart, div.slidercontainer .social span.slidertitle span.titlepart {
+  margin-left: -0.25em;
+}
+/* line 665, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental span.slidervalue, div.slidercontainer .physical span.slidervalue, div.slidercontainer .social span.slidervalue {
+  position: absolute;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  right: 7.5em;
+  font-size: 0.8125em;
+  line-height: 0.8125em;
+  font-weight: normal;
+  vertical-align: baseline;
+  text-align: right;
+  margin-top: 0.375em;
+}
+/* line 678, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental em.value, div.slidercontainer .physical em.value, div.slidercontainer .social em.value {
+  color: #ffffff;
+}
+/* line 683, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental span.statelevel, div.slidercontainer .physical span.statelevel, div.slidercontainer .social span.statelevel {
+  margin-left: 0.3125em;
+  color: #ffffff;
+}
+/* line 688, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer .mental > div, div.slidercontainer .physical > div, div.slidercontainer .social > div {
+  margin-top: 0.375em;
+}
+/* line 692, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer div.scoremonitor {
+  position: absolute;
+  width: 5em;
+  height: 6.25em;
+  top: 1.25em;
+  right: 0.4375em;
+}
+/* line 700, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer div.scoremonitor h4.colortitle {
+  margin-bottom: 0.625em;
+  text-align: center;
+  font-size: 0.75em;
+  line-height: 0.75em;
+  text-shadow: 0px 0.0625em 0.1875em rgba(119, 119, 119, 0.6);
+}
+/* line 711, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.slidercontainer div.scoremonitor div.colorspace {
+  background-image: none;
+  background-color: #777;
+  height: 5em;
+  width: 5em;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: #729fcf 2px 2px 10px;
+  -moz-box-shadow: #729fcf 2px 2px 10px;
+  box-shadow: #729fcf 2px 2px 10px;
+}
+
+/* line 733, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider {
+  width: 12.5em;
+  height: auto;
+}
+/* line 89, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: default;
+  position: relative;
+  border: 0.0625em solid #908d84;
+  border-radius: 0.1875em;
+}
+/* line 96, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: default;
+}
+/* line 102, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider a {
+  position: absolute;
+  z-index: 1;
+}
+/* line 107, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider a:nth-child(2) {
+  background: inherit !important;
+}
+/* line 111, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.vertical a {
+  width: 100%;
+  bottom: 0;
+}
+/* line 116, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.horizontal a {
+  height: 100%;
+  right: 0;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 127, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.physical div.physicalslider:before,
+  div.physical div.physicalslider body.TOUCH, div.physical div.physicalslider div {
+    -ms-touch-action: none;
+  }
+  /* line 130, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.physical div.physicalslider:before {
+    display: block;
+    position: absolute;
+    width: 150%;
+    left: -25%;
+    height: 400%;
+    top: -150%;
+    content: "";
+    z-index: -1;
+  }
+  /* line 140, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.physical div.physicalslider.vertical:before {
+    width: 400%;
+    left: -150%;
+    height: 150%;
+    top: -25%;
+  }
+}
+/* line 149, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.connect a, div.physical div.physicalslider.connect.lower {
+  background: #ffffff;
+}
+/* line 154, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider, div.physical div.physicalslider.connect.lower a {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFFF1A00', endColorstr='#FFFF1A00');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iNTAlIiB4Mj0iMTAwJSIgeTI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgyNTUsIDI2LCAwLCAwKSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmMWEwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 26, 0, 0)), color-stop(100%, #ff1a00));
+  background-image: -webkit-linear-gradient(left, rgba(255, 26, 0, 0) 0%, #ff1a00 100%);
+  background-image: -moz-linear-gradient(left, rgba(255, 26, 0, 0) 0%, #ff1a00 100%);
+  background-image: -o-linear-gradient(left, rgba(255, 26, 0, 0) 0%, #ff1a00 100%);
+  background-image: linear-gradient(left, rgba(255, 26, 0, 0) 0%, #ff1a00 100%);
+}
+/* line 184, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.disabled, div.physical div.physicalslider.disabled.connect.lower a {
+  background: #ccc;
+  box-shadow: none;
+}
+/* line 188, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider div {
+  height: 0.625em;
+  width: 1.25em;
+  height: 0;
+  width: 0;
+  border-bottom: 1.25em solid #ef2929;
+  border-right: 1.25em solid transparent;
+  cursor: pointer;
+}
+/* line 208, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.disabled div {
+  background: transparent;
+}
+/* line 211, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.horizontal {
+  width: 12.5em;
+  height: 0.3125em;
+  cursor: pointer;
+}
+/* line 216, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.horizontal div {
+  margin: 0.3125em 0 -0.5625em;
+}
+/* line 219, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.vertical {
+  width: 0.625em;
+  height: 18.75em;
+}
+/* line 223, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.physical div.physicalslider.vertical div {
+  margin: -0.5625em 0 -0.3125em;
+}
+
+/* line 89, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: default;
+  position: relative;
+  border: 0.0625em solid #908d84;
+  border-radius: 0.1875em;
+}
+/* line 96, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: default;
+}
+/* line 102, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider a {
+  position: absolute;
+  z-index: 1;
+}
+/* line 107, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider a:nth-child(2) {
+  background: inherit !important;
+}
+/* line 111, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.vertical a {
+  width: 100%;
+  bottom: 0;
+}
+/* line 116, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.horizontal a {
+  height: 100%;
+  right: 0;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 127, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.mental div.mentalslider:before,
+  div.mental div.mentalslider body.TOUCH, div.mental div.mentalslider div {
+    -ms-touch-action: none;
+  }
+  /* line 130, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.mental div.mentalslider:before {
+    display: block;
+    position: absolute;
+    width: 150%;
+    left: -25%;
+    height: 400%;
+    top: -150%;
+    content: "";
+    z-index: -1;
+  }
+  /* line 140, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.mental div.mentalslider.vertical:before {
+    width: 400%;
+    left: -150%;
+    height: 150%;
+    top: -25%;
+  }
+}
+/* line 149, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.connect a, div.mental div.mentalslider.connect.lower {
+  background: #ffffff;
+}
+/* line 154, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider, div.mental div.mentalslider.connect.lower a {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF006E2E', endColorstr='#FF006E2E');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iNTAlIiB4Mj0iMTAwJSIgeTI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAxMTAsIDQ2LCAwKSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0icmdiYSgwLCAxMTAsIDQ2LCAwLjkxKSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 110, 46, 0)), color-stop(100%, rgba(0, 110, 46, 0.91)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 110, 46, 0) 0%, rgba(0, 110, 46, 0.91) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 110, 46, 0) 0%, rgba(0, 110, 46, 0.91) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 110, 46, 0) 0%, rgba(0, 110, 46, 0.91) 100%);
+  background-image: linear-gradient(left, rgba(0, 110, 46, 0) 0%, rgba(0, 110, 46, 0.91) 100%);
+}
+/* line 184, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.disabled, div.mental div.mentalslider.disabled.connect.lower a {
+  background: #ccc;
+  box-shadow: none;
+}
+/* line 188, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider div {
+  height: 0.625em;
+  width: 1.25em;
+  height: 0;
+  width: 0;
+  border-bottom: 1.25em solid #8ae234;
+  border-right: 1.25em solid transparent;
+  cursor: pointer;
+}
+/* line 208, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.disabled div {
+  background: transparent;
+}
+/* line 211, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.horizontal {
+  width: 12.5em;
+  height: 0.3125em;
+  cursor: pointer;
+}
+/* line 216, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.horizontal div {
+  margin: 0.3125em 0 -0.5625em;
+}
+/* line 219, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.vertical {
+  width: 0.625em;
+  height: 18.75em;
+}
+/* line 223, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.mental div.mentalslider.vertical div {
+  margin: -0.5625em 0 -0.3125em;
+}
+
+/* line 89, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: default;
+  position: relative;
+  border: 0.0625em solid #908d84;
+  border-radius: 0.1875em;
+}
+/* line 96, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  cursor: default;
+}
+/* line 102, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider a {
+  position: absolute;
+  z-index: 1;
+}
+/* line 107, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider a:nth-child(2) {
+  background: inherit !important;
+}
+/* line 111, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.vertical a {
+  width: 100%;
+  bottom: 0;
+}
+/* line 116, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.horizontal a {
+  height: 100%;
+  right: 0;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* line 127, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.social div.socialslider:before,
+  div.social div.socialslider body.TOUCH, div.social div.socialslider div {
+    -ms-touch-action: none;
+  }
+  /* line 130, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.social div.socialslider:before {
+    display: block;
+    position: absolute;
+    width: 150%;
+    left: -25%;
+    height: 400%;
+    top: -150%;
+    content: "";
+    z-index: -1;
+  }
+  /* line 140, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+  div.social div.socialslider.vertical:before {
+    width: 400%;
+    left: -150%;
+    height: 150%;
+    top: -25%;
+  }
+}
+/* line 149, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.connect a, div.social div.socialslider.connect.lower {
+  background: #ffffff;
+}
+/* line 154, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider, div.social div.socialslider.connect.lower a {
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FFB2E1FF', endColorstr='#FF2F7FCE');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iNTAlIiB4Mj0iMTAwJSIgeTI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0icmdiYSgxNzgsIDIyNSwgMjU1LCAwKSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzJmN2ZjZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(178, 225, 255, 0)), color-stop(100%, #2f7fce));
+  background-image: -webkit-linear-gradient(left, rgba(178, 225, 255, 0) 0%, #2f7fce 100%);
+  background-image: -moz-linear-gradient(left, rgba(178, 225, 255, 0) 0%, #2f7fce 100%);
+  background-image: -o-linear-gradient(left, rgba(178, 225, 255, 0) 0%, #2f7fce 100%);
+  background-image: linear-gradient(left, rgba(178, 225, 255, 0) 0%, #2f7fce 100%);
+}
+/* line 184, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.disabled, div.social div.socialslider.disabled.connect.lower a {
+  background: #ccc;
+  box-shadow: none;
+}
+/* line 188, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider div {
+  height: 0.625em;
+  width: 1.25em;
+  height: 0;
+  width: 0;
+  border-bottom: 1.25em solid #729fcf;
+  border-right: 1.25em solid transparent;
+  cursor: pointer;
+}
+/* line 208, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.disabled div {
+  background: transparent;
+}
+/* line 211, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.horizontal {
+  width: 12.5em;
+  height: 0.3125em;
+  cursor: pointer;
+}
+/* line 216, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.horizontal div {
+  margin: 0.3125em 0 -0.5625em;
+}
+/* line 219, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.vertical {
+  width: 0.625em;
+  height: 18.75em;
+}
+/* line 223, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.social div.socialslider.vertical div {
+  margin: -0.5625em 0 -0.3125em;
+}
+
+/* line 755, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+hr.homehr {
+  border: none;
+  border-top: 0.0625em dashed white;
+  color: #c3d1dc;
+  background-color: #c3d1dc;
+  height: 0em;
+  width: 100%;
+  margin-top: 0.1875em;
+  padding: 0;
+}
+
+/* line 769, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.panelcontainer {
+  float: right;
+  width: 65%;
+  height: 2.75em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+/* line 778, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.panelcontainer span.versionbutton {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0.25em 0.125em 0.375em 0.125em;
+  padding: 0.1875em 0.125em 0.3125em 0.125em;
+  height: 1.125em;
+  background-color: #95abc1;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+}
+/* line 793, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.panelcontainer #versionwrapper {
+  position: absolute;
+}
+/* line 796, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.panelcontainer div.hidenav {
+  left: -999em;
+}
+/* line 800, D:/xampp-installed/htdocs/qalatest/front-end-dev/sass/partials/_screen.scss */
+div.panelcontainer div.shownav {
+  left: auto;
+}
