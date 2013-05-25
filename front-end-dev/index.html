@@ -1,386 +1,440 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-<!--[if lt IE 9]>
-  
-<![endif]-->
-<!--[if (gt IE 8) | (IEMobile)]><!-->
-<link href="stylesheets/unsemantic-grid-responsive.css" rel="stylesheet" />
-<!--<![endif]-->
-<!--[if (lt IE 9) & (!IEMobile)]>
-  
-<![endif]-->
-<link href="stylesheets/screen.css" rel="stylesheet" />
-<!--[if gte IE 9]>
-  <style type="text/css">
-    .gradient {
-       filter: none;
-    }
-  </style>
-  <![endif]-->
-  <title>Insert title here</title>
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="UTF-8">
+		<!--[if lt IE 9]>
+		  
+		<![endif]-->
+		<!--[if (gt IE 8) | (IEMobile)]><!-->
+		<link href="stylesheets/unsemantic-grid-responsive.css" rel="stylesheet" />
+		<!--<![endif]-->
+		<!--[if (lt IE 9) & (!IEMobile)]>
+		  
+		<![endif]-->
+		<link href="stylesheets/screen.css" rel="stylesheet" />
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+		    .gradient {
+		       filter: none;
+		    }
+		  </style>
+		  <![endif]-->
+		  <title>Insert title here</title>
 
-</head>
-<body id="home">
-	<div class="headerbackground"></div>
-	<!--   <div id="headerbackground"></div> -->
-	<div id="container" class="grid-container">
-		<!-- the header and navigation -->
-		<header role="banner" class="group grid-100 mobile-grid-100 grid-parent">
+		</head>
+		<body id="home">
+			<div class="headerbackground"></div>
+			<!--   <div id="headerbackground"></div> -->
+			<div id="container" class="grid-container">
+				<!-- the header and navigation -->
+				<header role="banner" class="group grid-100 mobile-grid-100 grid-parent">
 
-			<!-- LOGO here -->
-			<div id="logo-menu-search" class="grid-45 mobile-grid-45 grid-parent">
+					<!-- LOGO here -->
+					<div id="logo-menu-search" class="grid-45 mobile-grid-45 grid-parent">
 
-				<div class="grid-30 mobile-grid-30 ">
-					<div id="menuwrapper">
-						<div id="logowrapper" class="gradient">
-							First
-						</div>
-
-						<div id="navwrapper" class="hidenav" >
-							<div class="menucaret"></div>
-							<div class="menutooltip"></div>
-							<ul id="nav" class="submenu">
-								<li class="menuitem"><a href="#" data-menuitem="first"><span class="numbertitle">1</span><span class="menutext">Get answers for  general questions</span></a> <span class="stroke" title='You have earned 27gold,23silver,322bronze,2324iron medals,con pro you! ^_^'></span></li>
-								<li class="menuitem"><a href="#" data-menuitem="second"><span class="numbertitle">2</span><span class="menutext">Find people like you and get useful information</span></a> <span class="box"></span></li>
-								<li class="menuitem"><a href="#" data-menuitem="third"><span class="numbertitle">3</span><span class="menutext">Find a healthcare professionaland consult him</span></a> <span class="box"></span></li>
-								<li class="menuitem"><a href="#" data-menuitem="fourth"><span class="numbertitle">4</span><span class="menutext">Waiting for recovery and enjoy better life</span></a>  <span class="stroke"></span></li>
-							</ul>  
-
-							<div class="menufooter">how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients  </div> 
-						</div> 
-
-					</div> 
-				</div>
-				
-				<div class="grid-70 mobile-grid-70 pull-15 ">
-					<div class="headersearchbar">
-						<form>
-							<div class="menusearchbox"> <input type="text" maxlength="1000" name="search" autocomplete="off" class="field" placeholder="Find answers of your interest" />
-								<button class="searchbtn submit" type="submit" ></button> 
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-
-			<!-- middle area -->
-			<div id="homepage" class="grid-10 mobile-grid-10 grid-parent">
-				<div class="healthystate">
-					<div class='logoimg'></div>
-
-					<div class="statebar hidenav">
-
-						<div class='buttonhere'>
-							<a class="homebutton gradient">Home</a>
-						</div>
-						<hr class="homehr">
-						<h3>Tell us your healthystate,find people like you</h3>
-						<hr class="homehr">
-						<div class='slidercontainer'>
-
-								<div class='physical'>
-									<span class='slidertitle' title='Physical state'>
-										<em class='titlefirstletter'>P</em>
-									<span class='titlepart'>hysical state</span></span> 
-									<span class='slidervalue' title='Self-assessment of physical condition'>
-										<em class='value'>88%</em>
-										<span class='statelevel'>Not good</span></span>
-									<div class='physicalslider'></div>
+						<div class="grid-30 mobile-grid-30 ">
+							<div id="menuwrapper">
+								<div id="logowrapper" class="gradient">
+									First
 								</div>
 
-								<div class='mental'><span class='slidertitle'><em class='titlefirstletter'>M</em>
-									<span class='titlepart'>ental state:</span></span> 
-									<span class='slidervalue' title='Self-assessment of mental condition'><em class='value'>88%</em>
-										<span class='statelevel'>Not good</span></span>
-										<div class='mentalslider'></div>
-										
-									</div>
-									<div class='social'><span class='slidertitle'><em class='titlefirstletter'>S</em>
-											<span class='titlepart'>ocial state:</span></span> 
-										<span class='slidervalue' title='Self-assessment of social  condition'>
-											<em class='value'>88%</em><span class='statelevel'>Not good</span></span>
-										<div class='socialslider'></div>
-									</div>
-
-										<div class='clear'></div>
-										<div class='scoremonitor'><h4 class='colortitle' title='Calculated Healthy Color'>Calculated </h4>
-											<div class='colorspace'></div>
-										</div>
-
-										<div class='sliderfooter'> More accurate analysis,click here</div>
-									</div>
-
-									<form name="stateform">
-										<div class='statenumber'></div>
-										<!--  <textarea name="anymood" rows="4" cols="20" ></textarea> -->
-										<button type="submit" class="submit" name="submit"></button>
-									</form>
-								</div> 
-							</div>
-						</div>
-
-						<!-- userpanel -->
-						<div id="userpanel" class="grid-45 mobile-grid-45 grid-parent">
-							<div class="panelcontainer">
-								<span class="versionbutton">  General </span>
-								<div id="versionwrapper" class="hidenav" >
+								<div id="navwrapper" class="hidenav" >
 									<div class="menucaret"></div>
+									<div class="menutooltip"></div>
 									<ul id="nav" class="submenu">
-										<li class="menuitem"><a href="#">General</a></li>
-										<li class="menuitem"><a href="#">Patients Related</a></li>
-										<li class="menuitem"><a href="#">Healthcare Giver</a></li>
+										<li class="menuitem"><a href="#" data-menuitem="first"><span class="numbertitle">1</span><span class="menutext">Get answers for  general questions</span></a> <span class="stroke" title='You have earned 27gold,23silver,322bronze,2324iron medals,con pro you! ^_^'></span></li>
+										<li class="menuitem"><a href="#" data-menuitem="second"><span class="numbertitle">2</span><span class="menutext">Find people like you and get useful information</span></a> <span class="box"></span></li>
+										<li class="menuitem"><a href="#" data-menuitem="third"><span class="numbertitle">3</span><span class="menutext">Find a healthcare professionaland consult him</span></a> <span class="box"></span></li>
+										<li class="menuitem"><a href="#" data-menuitem="fourth"><span class="numbertitle">4</span><span class="menutext">Waiting for recovery and enjoy better life</span></a>  <span class="stroke"></span></li>
 									</ul>  
+
 									<div class="menufooter">how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients  </div> 
 								</div> 
-								<span class="versionbutton"><img src="images/uprofile.jpg"></span>
-							</div>	
 
-
+							</div> 
 						</div>
-					</header>
-
-					<!-- the content -->
-					<div id="content" role="main"
-					class="grid-75 mobile-grid-100 grid-parent">
-					<!-- left content column -->
-					<div id="questions" class="grid-75 mobile-grid-75 grid-parent">
-						<div id="questionlib" class="grid-100 mobile-grid-100">
-							questionlib</div>
-							<div id="hotquestions" class="grid-100 mobile-grid-100">
-								hotquestions</div>
-								<div id="featuredquestions" class="grid-100 mobile-grid-100">
-									featuredquestions</div>
-								</div>
-								<!-- right content column -->
-								<div id="recommend" class="grid-25 mobile-grid-25">"recommend"
-								</div>
+						
+						<div class="grid-70 mobile-grid-70 pull-15 ">
+							<div class="headersearchbar">
+								<form>
+									<div class="menusearchbox"> <input type="text" maxlength="1000" name="search" autocomplete="off" class="field" placeholder="Find answers of your interest" />
+										<button class="searchbtn submit" type="submit" ></button> 
+									</div>
+								</form>
 							</div>
-							<!-- the sidebar -->
-
-							<aside class="grid-25">
-								<section role="complementary">
-									<div class="sideBlock unSung">
-										<h1>Unsung heroes...</h1>
-									</div>
-								</section>
-								<section role="complementary">
-									<div class="sideBlock overHyped">
-										<h1>Overhyped nonsense...</h1>
-									</div>
-								</section>
-							</aside>
-
-
-							<!-- the footer -->
-							<footer role="contentinfo" class=" grid-100 mobile-grid-100">
-								<p>
-									Note: our opinion is absolutely correct. You are wrong, even if you
-									think you are right. That’s a fact. Deal with it. <span> Made
-									by <a href="http://benfrain.com">benfrain.com</a>.
-								</span><span> Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP
-								file</a></span>
-							</p>
-						</footer>
-
+						</div>
 					</div>
 
+					<!-- middle area -->
+					<div id="homepage" class="grid-10 mobile-grid-10 grid-parent">
+						<div class="healthystate">
+							<div class='logoimg'></div>
 
-					<!-- content here -->
-					<script type="text/javascript" src="javascripts/jquery-1.9.1.js"></script>
-					<script type="text/javascript" src="javascripts/jquery.nouislider.js"></script>
-					<script type="text/javascript" src="javascripts/all.js"></script>
+							<div class="statebar hidenav">
 
-					<!-- Notice we only include the minified script here. You can include the non-minified version, just don't include both! -->
-					<script type="text/javascript" src="javascripts/jquery-qtip2.01.js"></script>
-					<script>
-					function shownav(){
-						$("#navwrapper").removeClass("hidenav").addClass("shownav");
-						$("#logowrapper").addClass('ahover').removeClass('anormal');
-					}
-					function hidenav(){
-						$("#navwrapper").removeClass("shownav").addClass("hidenav");
-						$("#logowrapper").addClass('anormal').removeClass('ahover');
+								<div class='buttonhere'>
+									<a class="homebutton gradient">Home</a>
+								</div>
+								<hr class="homehr">
+								<h3>Tell us your healthystate,find people like you</h3>
+								<hr class="homehr">
+								<div class='slidercontainer'>
 
-					}
+										<div class='physical'>
+											<span class='slidertitle' title='Physical state'>
+												<em class='titlefirstletter'>P</em>
+											<span class='titlepart'>hysical state</span></span> 
+											<span class='slidervalue' title='Self-assessment of physical condition'>
+												<em class='value'></em>
+												<span class='statelevel' ></span></span>
+											<div class='physicalslider'></div>
+										</div>
 
-					function showstatebar() {
-						$('div.statebar').removeClass("hidenav").addClass("showstate");
-						console.log('shownav');
-		//$("div.logoimg").addClass('ahover').removeClass('anormal');
-	}
-	function hidestatebar() {
-		$('div.statebar').removeClass("showstate").addClass("hidenav");
-		console.log('hidenav');
-		//$("div.logoimg").addClass('ahover').removeClass('anormal');
-	}
-	$(document).ready(function(){
-		var cfg = {over:shownav,out:hidenav,selector:null,timeout:300,sensitivity:30} ;
-		$("#menuwrapper").hoverIntent( cfg);
+										<div class='mental'><span class='slidertitle'><em class='titlefirstletter'>M</em>
+											<span class='titlepart'>ental state:</span></span> 
+											<span class='slidervalue' title='Self-assessment of mental condition'><em class='value'></em>
+												<span class='statelevel'></span></span>
+												<div class='mentalslider'></div>
+												
+											</div>
+											<div class='social'><span class='slidertitle'><em class='titlefirstletter'>S</em>
+													<span class='titlepart'>ocial state:</span></span> 
+												<span class='slidervalue' title='Self-assessment of social  condition'>
+													<em class='value'></em><span class='statelevel'></span></span>
+												<div class='socialslider'></div>
+											</div>
 
-    	//search bar auto lengthening
-    	$("div.menusearchbox input").mousedown(function(){
-    		if($(this).data('lengthy') != true) {
-    			$(this).addClass('length95');
-    			$(this).data('lengthy',true);
-    		}
-    	});
-    	
-    	$("div.menusearchbox input").blur(function(e){
-    		if($(this).data('lengthyclick')) {
-    			$('div.menusearchbox form').submit();
-    			$(this).data('lengthy',false);
+												<div class='clear'></div>
+												<div class='scoremonitor'><h4 class='colortitle' title='Calculated Healthy Color'>Calculated </h4>
+													<div class='colorspace'></div>
+												</div>
 
-    		}
-    		if($(this).data('lengthy')) {
-    			$(this).removeClass('length95');
-    			$(this).data('lengthy',false);
-    		}
-    		
-    	});
-    	
-    	$("div.menusearchbox button").mousedown(function(e){
-    		if($('div.menusearchbox input').data('lengthy')) {
-    			$('div.menusearchbox input').data('lengthyclick',true);
-    		} 
-    		else {
-    			$('div.menusearchbox input').data('lengthyclick',false);
-    		}
-    	});
-    	
-    	/*
-    	$('#menuwrapper span.stroke,#menuwrapper span.box').each(function(){
-    		$(this).hover(
-    			function(){
-    				$($(this).prev()[0]).addClass('ahover');
-    		},
-    			function(){
-    				$($(this).prev()[0]).removeClass('ahover');
-    			}
-    		);
-    	});
-*/
-$('#logowrapper').data('otext', $('#logowrapper').text()); 
-$('#logowrapper').data('oplaceholder', $('div.menusearchbox input').attr('placeholder')); 
-$('#nav a').hover(
+												<div class='sliderfooter'> More accurate analysis,click here</div>
+											</div>
 
-	function(){
-		var n = $(this).data('menuitem');
-		switch(n) {
-			case 'first':
-			$('#logowrapper').text('First');
-			var t = $(this).find('span.menutext').text();
-			$('div.menusearchbox input').attr('placeholder',t)
-			break;
-			case 'second':
-			var t = $(this).find('span.menutext').text();
-			$('div.menusearchbox input').attr('placeholder',t)
-			$('#logowrapper').text('Second');
-			break;
-			case 'third':
-			var t = $(this).find('span.menutext').text();
-			$('div.menusearchbox input').attr('placeholder',t)
-			$('#logowrapper').text('Third');
-			break;
-			case 'fourth':
-			var t = $(this).find('span.menutext').text();
-			$('div.menusearchbox input').attr('placeholder',t)
-			$('#logowrapper').text('Fourth');
-			break;
+											<form name="stateform">
+												<div class='statenumber'></div>
+												<!--  <textarea name="anymood" rows="4" cols="20" ></textarea> -->
+												<button type="submit" class="submit" name="submit"></button>
+											</form>
+										</div> 
+									</div>
+								</div>
+
+								<!-- userpanel -->
+								<div id="userpanel" class="grid-45 mobile-grid-45 grid-parent">
+									<div class="panelcontainer">
+										<span class="versionbutton">  General </span>
+										<div id="versionwrapper" class="hidenav" >
+											<div class="menucaret"></div>
+											<ul id="nav" class="submenu">
+												<li class="menuitem"><a href="#">General</a></li>
+												<li class="menuitem"><a href="#">Patients Related</a></li>
+												<li class="menuitem"><a href="#">Healthcare Giver</a></li>
+											</ul>  
+											<div class="menufooter">how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients  </div> 
+										</div> 
+										<span class="versionbutton"><img src="images/uprofile.jpg"></span>
+									</div>	
+
+
+								</div>
+							</header>
+
+							<!-- the content -->
+							<div id="content" role="main"
+							class="grid-75 mobile-grid-100 grid-parent">
+							<!-- left content column -->
+							<div id="questions" class="grid-75 mobile-grid-75 grid-parent">
+								<div id="questionlib" class="grid-100 mobile-grid-100">
+									questionlib</div>
+									<div id="hotquestions" class="grid-100 mobile-grid-100">
+										hotquestions</div>
+										<div id="featuredquestions" class="grid-100 mobile-grid-100">
+											featuredquestions</div>
+										</div>
+										<!-- right content column -->
+										<div id="recommend" class="grid-25 mobile-grid-25">"recommend"
+										</div>
+									</div>
+									<!-- the sidebar -->
+
+									<aside class="grid-25">
+										<section role="complementary">
+											<div class="sideBlock unSung">
+												<h1>Unsung heroes...</h1>
+											</div>
+										</section>
+										<section role="complementary">
+											<div class="sideBlock overHyped">
+												<h1>Overhyped nonsense...</h1>
+											</div>
+										</section>
+									</aside>
+
+
+									<!-- the footer -->
+									<footer role="contentinfo" class=" grid-100 mobile-grid-100">
+										<p>
+											Note: our opinion is absolutely correct. You are wrong, even if you
+											think you are right. That’s a fact. Deal with it. <span> Made
+											by <a href="http://benfrain.com">benfrain.com</a>.
+										</span><span> Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP
+										file</a></span>
+									</p>
+								</footer>
+
+							</div>
+
+
+							<!-- content here -->
+							<script type="text/javascript" src="javascripts/jquery-1.9.1.js"></script>
+							<script type="text/javascript" src="javascripts/jquery.nouislider.js"></script>
+							<script type="text/javascript" src="javascripts/all.js"></script>
+
+							<!-- Notice we only include the minified script here. You can include the non-minified version, just don't include both! -->
+							<script type="text/javascript" src="javascripts/jquery-qtip2.01.js"></script>
+							<script>
+							function shownav(){
+								$("#navwrapper").removeClass("hidenav").addClass("shownav");
+								$("#logowrapper").addClass('ahover').removeClass('anormal');
+							}
+							function hidenav(){
+								$("#navwrapper").removeClass("shownav").addClass("hidenav");
+								$("#logowrapper").addClass('anormal').removeClass('ahover');
+
+							}
+
+							function showstatebar() {
+								$('div.statebar').removeClass("hidenav").addClass("showstate");
+								console.log('shownav');
+				//$("div.logoimg").addClass('ahover').removeClass('anormal');
+			}
+			function hidestatebar() {
+				$('div.statebar').removeClass("showstate").addClass("hidenav");
+				console.log('hidenav');
+				//$("div.logoimg").addClass('ahover').removeClass('anormal');
+			}
+			$(document).ready(function(){
+				var cfg = {over:shownav,out:hidenav,selector:null,timeout:300,sensitivity:30} ;
+				$("#menuwrapper").hoverIntent( cfg);
+
+		    	//search bar auto lengthening
+		    	$("div.menusearchbox input").mousedown(function(){
+		    		if($(this).data('lengthy') != true) {
+		    			$(this).addClass('length95');
+		    			$(this).data('lengthy',true);
+		    		}
+		    	});
+		    	
+		    	$("div.menusearchbox input").blur(function(e){
+		    		if($(this).data('lengthyclick')) {
+		    			$('div.menusearchbox form').submit();
+		    			$(this).data('lengthy',false);
+
+		    		}
+		    		if($(this).data('lengthy')) {
+		    			$(this).removeClass('length95');
+		    			$(this).data('lengthy',false);
+		    		}
+		    		
+		    	});
+		    	
+		    	$("div.menusearchbox button").mousedown(function(e){
+		    		if($('div.menusearchbox input').data('lengthy')) {
+		    			$('div.menusearchbox input').data('lengthyclick',true);
+		    		} 
+		    		else {
+		    			$('div.menusearchbox input').data('lengthyclick',false);
+		    		}
+		    	});
+		    	
+		    	/*
+		    	$('#menuwrapper span.stroke,#menuwrapper span.box').each(function(){
+		    		$(this).hover(
+		    			function(){
+		    				$($(this).prev()[0]).addClass('ahover');
+		    		},
+		    			function(){
+		    				$($(this).prev()[0]).removeClass('ahover');
+		    			}
+		    		);
+		    	});
+		*/
+		$('#logowrapper').data('otext', $('#logowrapper').text()); 
+		$('#logowrapper').data('oplaceholder', $('div.menusearchbox input').attr('placeholder')); 
+		$('#nav a').hover(
+
+			function(){
+				var n = $(this).data('menuitem');
+				switch(n) {
+					case 'first':
+					$('#logowrapper').text('First');
+					var t = $(this).find('span.menutext').text();
+					$('div.menusearchbox input').attr('placeholder',t)
+					break;
+					case 'second':
+					var t = $(this).find('span.menutext').text();
+					$('div.menusearchbox input').attr('placeholder',t)
+					$('#logowrapper').text('Second');
+					break;
+					case 'third':
+					var t = $(this).find('span.menutext').text();
+					$('div.menusearchbox input').attr('placeholder',t)
+					$('#logowrapper').text('Third');
+					break;
+					case 'fourth':
+					var t = $(this).find('span.menutext').text();
+					$('div.menusearchbox input').attr('placeholder',t)
+					$('#logowrapper').text('Fourth');
+					break;
+				}
+
+			},
+			function(){
+				var ot = $('#logowrapper').data('otext');
+				var op = $('#logowrapper').data('oplaceholder');
+				$('#logowrapper').text(ot);
+				$('div.menusearchbox input').attr('placeholder',op);
+			}
+			);
+
+
+		var cfg2 = {over:showstatebar,out:hidestatebar,selector:null,timeout:300,sensitivity:30} ;
+		$("div.healthystate").hoverIntent( cfg2);
+
+
+		
+		$("div.physicalslider").noUiSlider({
+			range: [0.00, 100.00]
+			,start: 70
+			,step: 1
+			,handles: 1
+			// ,serialization: {
+			// 	to:[$('div.statenumber')]
+			// 	,resolution: 0.01
+			// }
+			,slide: function(){
+				var r = $(this).val();
+				var g = $('div.mentalslider').val()?$('div.mentalslider').val():0;
+				var b = $('div.socialslider').val()?$('div.socialslider').val():0;
+				console.log('when sliding,r = ' + r,' b= ' + b + ' g =' + g );
+				refreshColorSpace(r,g,b);
+				dataLevel(r,$('div.physical em.value'),$('div.physical span.statelevel'),'statelevel');
+			}
+		});
+
+
+
+		$("div.mentalslider").noUiSlider({
+			range: [0, 100]
+			,start: 60
+			,step: 1
+			,handles: 1
+			,slide: function(){
+				var g = $(this).val();
+				 var r = $('div.physicalslider').val()?$('div.physicalslider').val():0;
+				var b = $('div.socialslider').val()?$('div.socialslider').val():0;
+				console.log('when sliding,r = ' + r,' b= ' + b + ' g =' + g );
+				refreshColorSpace(r,g,b);
+				dataLevel(g,$('div.mental em.value'),$('div.mental span.statelevel'),'statelevel');
+			}
+		});
+
+		$("div.socialslider").noUiSlider({
+			range: [0, 100]
+			,start: 75
+			,step: 1
+			,handles: 1
+			,slide: function(){
+				var b = $(this).val();
+				  var  r = $('div.physicalslider').val();
+				var g = $('div.mentalslider').val()?$('div.mentalslider').val():0;
+				 refreshColorSpace(r,g,b);
+				 dataLevel(b,$('div.social em.value'),$('div.social span.statelevel'),'statelevel');
+			}
+		});
+
+		
+
+		$('span.titlepart').each(function(){ $(this).hide();});
+
+
+		$('div.mental , div.physical , div.social').each(function(){
+
+			var cfg = {over:function(){$(this).find('span.titlepart').show();},out:function(){$(this).find('span.titlepart').hide();},selector:null,timeout:300,sensitivity:30} ;
+				$(this).hoverIntent( cfg);
+		});
+
+
+		});
+
+		function hexFromRGB(r, g, b) {
+
+			r = Math.ceil(r * 255 /100);
+			g = Math.ceil(g * 255 /100);
+			b = Math.ceil(b * 255 /100);
+
+		    var hex = [
+		      r.toString( 16 ),
+		      g.toString( 16 ),
+		      b.toString( 16 )
+		    ];
+		    $.each( hex, function( nr, val ) {
+		      if ( val.length === 1 ) {
+		        hex[ nr ] = "0" + val;
+		      }
+		    });
+		    return hex.join( "" ).toUpperCase();
+		  }
+
+		  function refreshColorSpace(r,g,b) {
+		    
+		      hex = hexFromRGB( r, g, b );
+		      console.log('when refreshing colorspace, hex = #' + hex);
+		    $( "div.slidercontainer div.colorspace" ).css( "background-color", "#" + hex );
+		  }
+
+		  // predefined data.
+		  var state = ['worst','bad','not good', 'not bad', 'good' ,'best'],
+		  o = [1, 10 ,30 ,50  ,80 ,90 ,100] ;
+
+		  function classifyNumber (n,arr) {
+		  	var temp = 0;
+		  	if(n >= 100) {
+		  		temp = 5;
+		  	}  else {
+
+		  	for(var i = 0 ; i < arr.length ; i++) {
+		  		if( n >= arr[i] && (i + 1 ) < arr.length && n < arr[i+1]) {
+		  			temp = i ;
+		  			break;
+		  		} 
+		  	}
+		  	 
+		  }
+		  	return {'cl':'level' + (temp + 1),'content':state[temp]} ;
 		}
 
-	},
-	function(){
-		var ot = $('#logowrapper').data('otext');
-		var op = $('#logowrapper').data('oplaceholder');
-		$('#logowrapper').text(ot);
-		$('div.menusearchbox input').attr('placeholder',op);
-	}
-	);
+		  function dataLevel(num,val_o,content_o,original_c) {
+		  	var r = classifyNumber(num,o);
+		  	val_o.text(num);
+
+		  	// set healthy state content
+		  	content_o.text(r['content']);
+
+		  	// set css class
+		  	content_o.attr('class','');
+		  	content_o.attr('class',original_c + '  ' + r['cl']);
+
+		  	console.log('when calling dataLevel function, num = ' + num + ' emvalue object = ' + val_o.text() + ' statelevel object = ' +
+		  	 content_o.text());
+		  }
 
 
-var cfg2 = {over:showstatebar,out:hidestatebar,selector:null,timeout:300,sensitivity:30} ;
-$("div.healthystate").hoverIntent( cfg2);
-
-$("div.physicalslider").noUiSlider({
-	range: [0, 255]
-	,start: 56
-	,step: 1
-	,handles: 1
-	,slide: function(){
-		var values = $(this).val();
-		$("div.statenumber").text(
-			values
-			);
-	}
-});
 
 
-// $('div.physicalslider.horizontal').parents().each(function(){
-// 	console.log('parent tagname= ' +this.nodeName.toLowerCase() + ', class=' + $(this).attr('class') + ', width= ' + 
-// 		$(this).width());
-// })
+		</script>
+		</body>
 
-$("div.mentalslider").noUiSlider({
-	range: [0, 255]
-	,start: 56
-	,step: 1
-	,handles: 1
-	,slide: function(){
-		var values = $(this).val();
-		$("div.statenumber").text(
-			values
-			);
-	}
-});
-
-$("div.socialslider").noUiSlider({
-	range: [0, 255]
-	,start: 56
-	,step: 1
-	,handles: 1
-	,slide: function(){
-		var values = $(this).val();
-		$("div.statenumber").text(
-			values
-			);
-	}
-});
-
-$('span.titlepart').each(function(){ $(this).hide();});
-
-
-$('div.mental , div.physical , div.social').each(function(){
-
-	var cfg = {over:function(){$(this).find('span.titlepart').show();},out:function(){$(this).find('span.titlepart').hide();},selector:null,timeout:300,sensitivity:30} ;
-		$(this).hoverIntent( cfg);
-});
-
-
-});
-
-
-function hexFromRGB(r, g, b) {
-    var hex = [
-      r.toString( 16 ),
-      g.toString( 16 ),
-      b.toString( 16 )
-    ];
-    $.each( hex, function( nr, val ) {
-      if ( val.length === 1 ) {
-        hex[ nr ] = "0" + val;
-      }
-    });
-    return hex.join( "" ).toUpperCase();
-  }
-  function refreshColorSpace(r,g,b) {
-    
-      hex = hexFromRGB( r, g, b );
-    $( "div.slidercontainer div.colorspace" ).css( "background-color", "#" + hex );
-  }
-
-</script>
-</body>
-
-</html>
+		</html>
