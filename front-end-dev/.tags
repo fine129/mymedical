@@ -1,0 +1,149 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+$.Widget	.\javascripts\jquery-slider1103.js	/^$.Widget = function( \/* options, element *\/ ) {};$/;"	f
+$.Widget	.\javascripts\jquery-slider1103.js	/^$.Widget.prototype = {$/;"	c
+$.Widget.defaultElement	.\javascripts\jquery-slider1103.js	/^	defaultElement: "<div>",$/;"	p
+$.Widget.options	.\javascripts\jquery-slider1103.js	/^	options: {$/;"	p
+$.Widget.widgetEventPrefix	.\javascripts\jquery-slider1103.js	/^	widgetEventPrefix: "",$/;"	p
+$.Widget.widgetName	.\javascripts\jquery-slider1103.js	/^	widgetName: "widget",$/;"	p
+$.cleanData	.\javascripts\jquery-slider1103.js	/^$.cleanData = function( elems ) {$/;"	f
+$.expr.toLowerCase	.\javascripts\jquery-slider1103.js	/^	$.expr[ ":" ][ fullName.toLowerCase() ] = function( elem ) {$/;"	f
+$.fn	.\javascripts\jquery-slider1103.js	/^	$.fn[ name ] = function( options ) {$/;"	f
+$.fn.addBack	.\javascripts\jquery-slider1103.js	/^	$.fn.addBack = function( selector ) {$/;"	f
+$.fn.unslider	.\javascripts\unslider.js	/^	$.fn.unslider = function(o) {$/;"	f
+$.widget	.\javascripts\jquery-slider1103.js	/^$.widget = function( name, base, prototype ) {$/;"	f
+$.widget.bridge	.\javascripts\jquery-slider1103.js	/^$.widget.bridge = function( name, object ) {$/;"	f
+$.widget.extend	.\javascripts\jquery-slider1103.js	/^$.widget.extend = function( target ) {$/;"	f
+$_val	.\javascripts\jquery.nouislider.js	/^		var $_val = jQuery.fn.val;$/;"	v
+Animation	.\javascripts\jquery-1.9.1.js	/^function Animation( elem, properties, options ) {$/;"	f
+Tween	.\javascripts\jquery-1.9.1.js	/^Tween.prototype = {$/;"	c
+Tween	.\javascripts\jquery-1.9.1.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f
+Tween.constructor	.\javascripts\jquery-1.9.1.js	/^	constructor: Tween,$/;"	p
+Tween.cur	.\javascripts\jquery-1.9.1.js	/^	cur: function() {$/;"	m
+Tween.init	.\javascripts\jquery-1.9.1.js	/^	init: function( elem, options, prop, end, easing, unit ) {$/;"	m
+Tween.init	.\javascripts\jquery-1.9.1.js	/^Tween.prototype.init.prototype = Tween.prototype;$/;"	m
+Tween.propHooks._default	.\javascripts\jquery-1.9.1.js	/^	_default: {$/;"	p
+Tween.run	.\javascripts\jquery-1.9.1.js	/^	run: function( percent ) {$/;"	m
+_.init	.\javascripts\unslider.js	/^		_.init = function(el, o) {$/;"	f
+_.next	.\javascripts\unslider.js	/^		_.next = function() {$/;"	f
+_.o.delay	.\javascripts\unslider.js	/^			delay: 3000,  \/\/ delay between slides, false for no autoplay (integer or boolean)$/;"	p
+_.o.init	.\javascripts\unslider.js	/^			init: 0,      \/\/ init delay, false for no delay (integer or boolean)$/;"	p
+_.o.pause	.\javascripts\unslider.js	/^			pause: !f,    \/\/ pause on hover (boolean)$/;"	p
+_.o.speed	.\javascripts\unslider.js	/^			speed: 500,   \/\/ animation speed, false for no transition (integer or boolean)$/;"	p
+_.play	.\javascripts\unslider.js	/^		_.play = function() {$/;"	f
+_.prev	.\javascripts\unslider.js	/^		_.prev = function() {$/;"	f
+_.stop	.\javascripts\unslider.js	/^		_.stop = function() {$/;"	f
+_.to	.\javascripts\unslider.js	/^		_.to = function(index, callback) {$/;"	f
+actualDisplay	.\javascripts\jquery-1.9.1.js	/^function actualDisplay( name, doc ) {$/;"	f
+addToPrefiltersOrTransports	.\javascripts\jquery-1.9.1.js	/^function addToPrefiltersOrTransports( structure ) {$/;"	f
+ajaxConvert	.\javascripts\jquery-1.9.1.js	/^function ajaxConvert( s, response ) {$/;"	f
+ajaxExtend	.\javascripts\jquery-1.9.1.js	/^function ajaxExtend( target, src ) {$/;"	f
+ajaxHandleResponses	.\javascripts\jquery-1.9.1.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
+augmentWidthOrHeight	.\javascripts\jquery-1.9.1.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
+buildParams	.\javascripts\jquery-1.9.1.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
+classifyNumber	.\index.html	/^		  function classifyNumber (n,arr) {$/;"	f
+cloneCopyEvent	.\javascripts\jquery-1.9.1.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
+constructor	.\javascripts\jquery-slider1103.js	/^	constructor.prototype = $.widget.extend( basePrototype, {$/;"	c
+createActiveXHR	.\javascripts\jquery-1.9.1.js	/^function createActiveXHR() {$/;"	f
+createFxNow	.\javascripts\jquery-1.9.1.js	/^function createFxNow() {$/;"	f
+createSafeFragment	.\javascripts\jquery-1.9.1.js	/^function createSafeFragment( document ) {$/;"	f
+createStandardXHR	.\javascripts\jquery-1.9.1.js	/^function createStandardXHR() {$/;"	f
+createTweens	.\javascripts\jquery-1.9.1.js	/^function createTweens( animation, props ) {$/;"	f
+css_defaultDisplay	.\javascripts\jquery-1.9.1.js	/^function css_defaultDisplay( nodeName ) {$/;"	f
+curCSS	.\javascripts\jquery-1.9.1.js	/^	curCSS = function( elem, name, _computed ) {$/;"	f
+dataLevel	.\index.html	/^		  function dataLevel(num,val_o,content_o,original_c) {$/;"	f
+dataType	.\javascripts\jquery-1.9.1.js	/^		var dataType,$/;"	v
+defaultPrefilter	.\javascripts\jquery-1.9.1.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
+disableScript	.\javascripts\jquery-1.9.1.js	/^function disableScript( elem ) {$/;"	f
+display	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
+findOrAppend	.\javascripts\jquery-1.9.1.js	/^function findOrAppend( elem, tag ) {$/;"	f
+fixCloneNodeIssues	.\javascripts\jquery-1.9.1.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
+fixDefaultChecked	.\javascripts\jquery-1.9.1.js	/^function fixDefaultChecked( elem ) {$/;"	f
+fn.hoverIntent	.\javascripts\all.js	/^(function($) {$/;"	f
+fn.hoverIntent.cfg.interval	.\javascripts\all.js	/^            interval: 100,$/;"	p
+fn.hoverIntent.cfg.sensitivity	.\javascripts\all.js	/^            sensitivity: 7,$/;"	p
+fn.hoverIntent.cfg.timeout	.\javascripts\all.js	/^            timeout: 0$/;"	p
+fn.hoverIntent.compare	.\javascripts\all.js	/^        var compare = function(ev,ob) {$/;"	f
+fn.hoverIntent.delay	.\javascripts\all.js	/^        var delay = function(ev,ob) {$/;"	f
+fn.hoverIntent.handleHover	.\javascripts\all.js	/^        var handleHover = function(e) {$/;"	f
+fn.hoverIntent.track	.\javascripts\all.js	/^        var track = function(ev) {$/;"	f
+fn.noUiSlider	.\javascripts\jquery.nouislider.js	/^(function ($) {$/;"	f
+fn.noUiSlider.call	.\javascripts\jquery.nouislider.js	/^		function call(f, scope, args) {$/;"	f
+fn.noUiSlider.client	.\javascripts\jquery.nouislider.js	/^		function client(f) {$/;"	f
+fn.noUiSlider.correct	.\javascripts\jquery.nouislider.js	/^		function correct(proposal, slider, handle) {$/;"	f
+fn.noUiSlider.defaults.handles	.\javascripts\jquery.nouislider.js	/^			handles : 2,$/;"	p
+fn.noUiSlider.defaults.serialization	.\javascripts\jquery.nouislider.js	/^			serialization : {$/;"	p
+fn.noUiSlider.percentage.to	.\javascripts\jquery.nouislider.js	/^			to : function (range, value) {$/;"	m
+fn.noUiSlider.place	.\javascripts\jquery.nouislider.js	/^		function place(handle, pos) {$/;"	f
+focusable	.\javascripts\jquery-slider1103.js	/^function focusable( element, isTabIndexNotNaN ) {$/;"	f
+fontWeight	.\javascripts\jquery-1.9.1.js	/^		fontWeight: 400$/;"	p
+genFx	.\javascripts\jquery-1.9.1.js	/^function genFx( type, includeWidth ) {$/;"	f
+genFx.which.height	.\javascripts\jquery-1.9.1.js	/^		attrs = { height: type },$/;"	p
+getAll	.\javascripts\jquery-1.9.1.js	/^function getAll( context, tag ) {$/;"	f
+getStyles	.\javascripts\jquery-1.9.1.js	/^	getStyles = function( elem ) {$/;"	f
+getWidthOrHeight	.\javascripts\jquery-1.9.1.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
+getWindow	.\javascripts\jquery-1.9.1.js	/^function getWindow( elem ) {$/;"	f
+hexFromRGB	.\index.html	/^		function hexFromRGB(r, g, b) {$/;"	f
+hidenav	.\index.html	/^							function hidenav(){$/;"	f
+hidenav	.\test.html	/^	function hidenav(){$/;"	f
+hidestatebar	.\index.html	/^			function hidestatebar() {$/;"	f
+hooks.empty.fire	.\javascripts\jquery-1.9.1.js	/^			hooks.empty.fire = function() {$/;"	f
+inspectPrefiltersOrTransports	.\javascripts\jquery-1.9.1.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
+inspectPrefiltersOrTransports.inspect	.\javascripts\jquery-1.9.1.js	/^	function inspect( dataType ) {$/;"	f
+isHidden	.\javascripts\jquery-1.9.1.js	/^function isHidden( elem, el ) {$/;"	f
+jQuery.cssHooks.opacity.get	.\javascripts\jquery-1.9.1.js	/^		get: function( elem, computed ) {$/;"	m
+jQuery.cssHooks.opacity.set	.\javascripts\jquery-1.9.1.js	/^		set: function( elem, value ) {$/;"	m
+jQuery.easing.linear	.\javascripts\jquery-1.9.1.js	/^	linear: function( p ) {$/;"	m
+jQuery.easing.swing	.\javascripts\jquery-1.9.1.js	/^	swing: function( p ) {$/;"	m
+jQuery.expr.filters.animated	.\javascripts\jquery-1.9.1.js	/^	jQuery.expr.filters.animated = function( elem ) {$/;"	f
+jQuery.expr.filters.hidden	.\javascripts\jquery-1.9.1.js	/^	jQuery.expr.filters.hidden = function( elem ) {$/;"	f
+jQuery.expr.filters.visible	.\javascripts\jquery-1.9.1.js	/^	jQuery.expr.filters.visible = function( elem ) {$/;"	f
+jQuery.fn.hover	.\javascripts\jquery-1.9.1.js	/^jQuery.fn.hover = function( fnOver, fnOut ) {$/;"	f
+jQuery.fn.load	.\javascripts\jquery-1.9.1.js	/^jQuery.fn.load = function( url, params, callback ) {$/;"	f
+jQuery.fn.offset	.\javascripts\jquery-1.9.1.js	/^jQuery.fn.offset = function( options ) {$/;"	f
+jQuery.fn.offset.docElem.left	.\javascripts\jquery-1.9.1.js	/^		box = { top: 0, left: 0 },$/;"	p
+jQuery.fn.offset.docElem.top	.\javascripts\jquery-1.9.1.js	/^		box = { top: 0, left: 0 },$/;"	p
+jQuery.fn.val	.\javascripts\jquery.nouislider.js	/^		jQuery.fn.val = function () {$/;"	f
+jQuery.fx.speeds._default	.\javascripts\jquery-1.9.1.js	/^	_default: 400$/;"	p
+jQuery.fx.speeds.fast	.\javascripts\jquery-1.9.1.js	/^	fast: 200,$/;"	p
+jQuery.fx.speeds.slow	.\javascripts\jquery-1.9.1.js	/^	slow: 600,$/;"	p
+jQuery.fx.start	.\javascripts\jquery-1.9.1.js	/^jQuery.fx.start = function() {$/;"	f
+jQuery.fx.stop	.\javascripts\jquery-1.9.1.js	/^jQuery.fx.stop = function() {$/;"	f
+jQuery.fx.tick	.\javascripts\jquery-1.9.1.js	/^jQuery.fx.tick = function() {$/;"	f
+jQuery.fx.timer	.\javascripts\jquery-1.9.1.js	/^jQuery.fx.timer = function( timer ) {$/;"	f
+jQuery.offset.setOffset	.\javascripts\jquery-1.9.1.js	/^	setOffset: function( elem, options, i ) {$/;"	m
+jQuery.param	.\javascripts\jquery-1.9.1.js	/^jQuery.param = function( a, traditional ) {$/;"	f
+jQuery.speed	.\javascripts\jquery-1.9.1.js	/^jQuery.speed = function( speed, easing, fn ) {$/;"	f
+letterSpacing	.\javascripts\jquery-1.9.1.js	/^		letterSpacing: 0,$/;"	p
+methods.create	.\javascripts\jquery.nouislider.js	/^			create : function () {$/;"	m
+methods.disabled	.\javascripts\jquery.nouislider.js	/^			disabled : function () {$/;"	m
+methods.val	.\javascripts\jquery.nouislider.js	/^			val : function () {$/;"	m
+nav	.\javascripts\unslider.js	/^		function nav(name, html) {$/;"	f
+nodeNames	.\javascripts\jquery-1.9.1.js	/^var nodeNames = "abbr|article|aside|audio|bdi|canvas|data|datalist|details|figcaption|figure|footer|" +$/;"	v
+oldCallbacks	.\javascripts\jquery-1.9.1.js	/^var oldCallbacks = [],$/;"	v
+opt.complete	.\javascripts\jquery-1.9.1.js	/^	opt.complete = function() {$/;"	f
+percentage._length	.\javascripts\jquery.nouislider.js	/^			_length : function (range) {$/;"	m
+percentage.from	.\javascripts\jquery.nouislider.js	/^			from : function (range, value) {$/;"	m
+percentage.is	.\javascripts\jquery.nouislider.js	/^			is : function (range, value) {$/;"	m
+position	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
+propFilter	.\javascripts\jquery-1.9.1.js	/^function propFilter( props, specialEasing ) {$/;"	f
+r20	.\javascripts\jquery-1.9.1.js	/^var r20 = \/%20\/g,$/;"	v
+refreshColorSpace	.\index.html	/^		  function refreshColorSpace(r,g,b) {$/;"	f
+restoreScript	.\javascripts\jquery-1.9.1.js	/^function restoreScript( elem ) {$/;"	f
+return	.\javascripts\jquery-1.9.1.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
+return.init	.\javascripts\jquery-1.9.1.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
+setGlobalEval	.\javascripts\jquery-1.9.1.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
+setPositiveNumber	.\javascripts\jquery-1.9.1.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
+showHide	.\javascripts\jquery-1.9.1.js	/^function showHide( elements, show ) {$/;"	f
+shownav	.\index.html	/^							function shownav(){$/;"	f
+shownav	.\test.html	/^	function shownav(){$/;"	f
+showstatebar	.\index.html	/^							function showstatebar() {$/;"	f
+sibling	.\javascripts\jquery-1.9.1.js	/^function sibling( cur, dir ) {$/;"	f
+vendorPropName	.\javascripts\jquery-1.9.1.js	/^function vendorPropName( style, name ) {$/;"	f
+visibility	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
+visible	.\javascripts\jquery-slider1103.js	/^function visible( element ) {$/;"	f
+winnow	.\javascripts\jquery-1.9.1.js	/^function winnow( elements, qualifier, keep ) {$/;"	f

@@ -504,7 +504,6 @@
 				   //background: linear-gradient(top, #95abc1 50%,#ededed 80%,#95abc1 100%);
 				   border-radius:  em(2,16) ;
 				   box-shadow:  em(1,16)   em(1,16)   em(3,16)  hsla(0, 0%, 16.6667%, 0.1);
-		  		   z-index:666;
 		  			 @include box-sizing(border-box);
 		  		}
 		  		
@@ -781,7 +780,17 @@
 		 em(5,16) , em(200,16) ,blue);
 		}
 		
-		
+		textarea.stateword {
+			background-color: #95abc1;
+			color:#ffffff;
+			border:em(2,16) solid #595757;
+			 
+			@include border-radius(em(3,16));
+			@include box-shadow(#5e646a 1px 1px 2px);
+			
+			@include input-placeholder(#ffffff);
+			overflow:auto;
+		}
 	  
 	  hr.homehr {
 	  	border:none;
