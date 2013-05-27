@@ -27,7 +27,7 @@
       
       if(!conf.hidden) tooltip.show();
       else tooltip.hide();
-      
+
       if(!conf.persistent)
       {
          elem.hover(
@@ -315,6 +315,8 @@
          jQuery(this).data("simpletip", el);  
       });
       
+      
+
       return this; 
    };
 })();

@@ -45,7 +45,7 @@ ajaxExtend	.\javascripts\jquery-1.9.1.js	/^function ajaxExtend( target, src ) {$
 ajaxHandleResponses	.\javascripts\jquery-1.9.1.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
 augmentWidthOrHeight	.\javascripts\jquery-1.9.1.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
 buildParams	.\javascripts\jquery-1.9.1.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
-classifyNumber	.\javascripts\all.js	/^              function classifyNumber (n,arr) {$/;"	f
+classifyNumber	.\javascripts\all.js	/^                      function classifyNumber (n,arr) {$/;"	f
 cloneCopyEvent	.\javascripts\jquery-1.9.1.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
 constructor	.\javascripts\jquery-slider1103.js	/^	constructor.prototype = $.widget.extend( basePrototype, {$/;"	c
 createActiveXHR	.\javascripts\jquery-1.9.1.js	/^function createActiveXHR() {$/;"	f
@@ -55,22 +55,28 @@ createStandardXHR	.\javascripts\jquery-1.9.1.js	/^function createStandardXHR() {
 createTweens	.\javascripts\jquery-1.9.1.js	/^function createTweens( animation, props ) {$/;"	f
 css_defaultDisplay	.\javascripts\jquery-1.9.1.js	/^function css_defaultDisplay( nodeName ) {$/;"	f
 curCSS	.\javascripts\jquery-1.9.1.js	/^	curCSS = function( elem, name, _computed ) {$/;"	f
-dataLevel	.\javascripts\all.js	/^              function dataLevel(num,val_o,content_o,original_c) {$/;"	f
+dataLevel	.\javascripts\all.js	/^                      function dataLevel(num,val_o,content_o,original_c) {$/;"	f
 dataType	.\javascripts\jquery-1.9.1.js	/^		var dataType,$/;"	v
+defaultConf.content	.\javascripts\jquery.simpletip-1.3.1.js	/^         content: 'A simple tooltip',$/;"	p
+defaultConf.focus	.\javascripts\jquery.simpletip-1.3.1.js	/^         focus: false,$/;"	p
+defaultConf.hidden	.\javascripts\jquery.simpletip-1.3.1.js	/^         hidden: true,$/;"	p
+defaultConf.offset	.\javascripts\jquery.simpletip-1.3.1.js	/^         offset: [0, 0],$/;"	p
+defaultConf.persistent	.\javascripts\jquery.simpletip-1.3.1.js	/^         persistent: false,$/;"	p
+defaultConf.position	.\javascripts\jquery.simpletip-1.3.1.js	/^         position: 'default',$/;"	p
 defaultPrefilter	.\javascripts\jquery-1.9.1.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
 disableScript	.\javascripts\jquery-1.9.1.js	/^function disableScript( elem ) {$/;"	f
 display	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
 findOrAppend	.\javascripts\jquery-1.9.1.js	/^function findOrAppend( elem, tag ) {$/;"	f
 fixCloneNodeIssues	.\javascripts\jquery-1.9.1.js	/^function fixCloneNodeIssues( src, dest ) {$/;"	f
 fixDefaultChecked	.\javascripts\jquery-1.9.1.js	/^function fixDefaultChecked( elem ) {$/;"	f
-fn.hoverIntent	.\javascripts\all.js	/^(function($) {$/;"	f
-fn.hoverIntent.cfg.interval	.\javascripts\all.js	/^            interval: 100,$/;"	p
-fn.hoverIntent.cfg.sensitivity	.\javascripts\all.js	/^            sensitivity: 7,$/;"	p
-fn.hoverIntent.cfg.timeout	.\javascripts\all.js	/^            timeout: 0$/;"	p
-fn.hoverIntent.compare	.\javascripts\all.js	/^        var compare = function(ev,ob) {$/;"	f
-fn.hoverIntent.delay	.\javascripts\all.js	/^        var delay = function(ev,ob) {$/;"	f
-fn.hoverIntent.handleHover	.\javascripts\all.js	/^        var handleHover = function(e) {$/;"	f
-fn.hoverIntent.track	.\javascripts\all.js	/^        var track = function(ev) {$/;"	f
+fn.hoverIntent	.\javascripts\all.js	/^        (function($) {$/;"	f
+fn.hoverIntent.cfg.interval	.\javascripts\all.js	/^                    interval: 100,$/;"	p
+fn.hoverIntent.cfg.sensitivity	.\javascripts\all.js	/^                    sensitivity: 7,$/;"	p
+fn.hoverIntent.cfg.timeout	.\javascripts\all.js	/^                    timeout: 0$/;"	p
+fn.hoverIntent.compare	.\javascripts\all.js	/^                var compare = function(ev,ob) {$/;"	f
+fn.hoverIntent.delay	.\javascripts\all.js	/^                var delay = function(ev,ob) {$/;"	f
+fn.hoverIntent.handleHover	.\javascripts\all.js	/^                var handleHover = function(e) {$/;"	f
+fn.hoverIntent.track	.\javascripts\all.js	/^                var track = function(ev) {$/;"	f
 fn.noUiSlider	.\javascripts\jquery.nouislider.js	/^(function ($) {$/;"	f
 fn.noUiSlider.call	.\javascripts\jquery.nouislider.js	/^		function call(f, scope, args) {$/;"	f
 fn.noUiSlider.client	.\javascripts\jquery.nouislider.js	/^		function client(f) {$/;"	f
@@ -87,10 +93,10 @@ getAll	.\javascripts\jquery-1.9.1.js	/^function getAll( context, tag ) {$/;"	f
 getStyles	.\javascripts\jquery-1.9.1.js	/^	getStyles = function( elem ) {$/;"	f
 getWidthOrHeight	.\javascripts\jquery-1.9.1.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
 getWindow	.\javascripts\jquery-1.9.1.js	/^function getWindow( elem ) {$/;"	f
-hexFromRGB	.\javascripts\all.js	/^            function hexFromRGB(r, g, b) {$/;"	f
-hidenav	.\javascripts\all.js	/^                                function hidenav(){$/;"	f
+hexFromRGB	.\javascripts\all.js	/^                    function hexFromRGB(r, g, b) {$/;"	f
+hidenav	.\javascripts\all.js	/^                                        function hidenav(){$/;"	f
 hidenav	.\test.html	/^	function hidenav(){$/;"	f
-hidestatebar	.\javascripts\all.js	/^                function hidestatebar() {$/;"	f
+hidestatebar	.\javascripts\all.js	/^                        function hidestatebar() {$/;"	f
 hooks.empty.fire	.\javascripts\jquery-1.9.1.js	/^			hooks.empty.fire = function() {$/;"	f
 inspectPrefiltersOrTransports	.\javascripts\jquery-1.9.1.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
 inspectPrefiltersOrTransports.inspect	.\javascripts\jquery-1.9.1.js	/^	function inspect( dataType ) {$/;"	f
@@ -107,6 +113,7 @@ jQuery.fn.load	.\javascripts\jquery-1.9.1.js	/^jQuery.fn.load = function( url, p
 jQuery.fn.offset	.\javascripts\jquery-1.9.1.js	/^jQuery.fn.offset = function( options ) {$/;"	f
 jQuery.fn.offset.docElem.left	.\javascripts\jquery-1.9.1.js	/^		box = { top: 0, left: 0 },$/;"	p
 jQuery.fn.offset.docElem.top	.\javascripts\jquery-1.9.1.js	/^		box = { top: 0, left: 0 },$/;"	p
+jQuery.fn.simpletip	.\javascripts\jquery.simpletip-1.3.1.js	/^   jQuery.fn.simpletip = function(conf)$/;"	f
 jQuery.fn.val	.\javascripts\jquery.nouislider.js	/^		jQuery.fn.val = function () {$/;"	f
 jQuery.fx.speeds._default	.\javascripts\jquery-1.9.1.js	/^	_default: 400$/;"	p
 jQuery.fx.speeds.fast	.\javascripts\jquery-1.9.1.js	/^	fast: 200,$/;"	p
@@ -132,18 +139,19 @@ percentage.is	.\javascripts\jquery.nouislider.js	/^			is : function (range, valu
 position	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
 propFilter	.\javascripts\jquery-1.9.1.js	/^function propFilter( props, specialEasing ) {$/;"	f
 r20	.\javascripts\jquery-1.9.1.js	/^var r20 = \/%20\/g,$/;"	v
-refreshColorSpace	.\javascripts\all.js	/^              function refreshColorSpace(r,g,b) {$/;"	f
+refreshColorSpace	.\javascripts\all.js	/^                      function refreshColorSpace(r,g,b) {$/;"	f
 restoreScript	.\javascripts\jquery-1.9.1.js	/^function restoreScript( elem ) {$/;"	f
 return	.\javascripts\jquery-1.9.1.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
 return.init	.\javascripts\jquery-1.9.1.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
 setGlobalEval	.\javascripts\jquery-1.9.1.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
 setPositiveNumber	.\javascripts\jquery-1.9.1.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
 showHide	.\javascripts\jquery-1.9.1.js	/^function showHide( elements, show ) {$/;"	f
-shownav	.\javascripts\all.js	/^                                function shownav(){$/;"	f
+shownav	.\javascripts\all.js	/^                                        function shownav(){$/;"	f
 shownav	.\test.html	/^	function shownav(){$/;"	f
-showstatebar	.\javascripts\all.js	/^                                function showstatebar() {$/;"	f
+showstatebar	.\javascripts\all.js	/^                                        function showstatebar() {$/;"	f
 sibling	.\javascripts\jquery-1.9.1.js	/^function sibling( cur, dir ) {$/;"	f
-state	.\javascripts\all.js	/^              var state = ['worst','bad','not good', 'not bad', 'good' ,'best'],$/;"	v
+state	.\javascripts\all.js	/^                      var state = ['worst','bad','not good', 'not bad', 'good' ,'best'],$/;"	v
+tooltip	.\javascripts\jquery.simpletip-1.3.1.js	/^      var tooltip = jQuery(document.createElement('div'))$/;"	v
 vendorPropName	.\javascripts\jquery-1.9.1.js	/^function vendorPropName( style, name ) {$/;"	f
 visibility	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
 visible	.\javascripts\jquery-slider1103.js	/^function visible( element ) {$/;"	f

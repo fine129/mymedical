@@ -1,209 +1,192 @@
-					<!DOCTYPE html>
-					<html>
-					<head>
-						<meta charset="UTF-8">
-					<!--[if lt IE 9]>
-					  
-					<![endif]-->
-					<!--[if (gt IE 8) | (IEMobile)]><!-->
-					<link href="stylesheets/unsemantic-grid-responsive.css" rel="stylesheet" />
-					<!--<![endif]-->
-					<!--[if (lt IE 9) & (!IEMobile)]>
-					  
-					<![endif]-->
-					<link href="stylesheets/screen.css" rel="stylesheet" />
-					<!--[if gte IE 9]>
-					  <style type="text/css">
-					    .gradient {
-					       filter: none;
-					    }
-					  </style>
-					  <![endif]-->
-					  <title>Insert title here</title>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39">
+        <meta charset="UTF-8"><!--[if lt IE 9]>
+  
+<![endif]-->
+        <!--[if (gt IE 8) | (IEMobile)]><!-->
+        <link href="stylesheets/unsemantic-grid-responsive.css" rel="stylesheet"><!--<![endif]-->
+        <!--[if (lt IE 9) & (!IEMobile)]>
+  
+<![endif]-->
+        <link href="stylesheets/screen.css" rel="stylesheet"><!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+  <![endif]-->
+        <title>
+            Insert title here
+        </title>
+    </head>
+    <body id="home">
+        <div class="headerbackground"></div>
+        <div id="container" class="grid-container">
+            <!-- the header and navigation -->
+            <header role="banner" class="group grid-100 mobile-grid-100 grid-parent">
+                <!-- LOGO here -->
+                <div id="logo-menu-search" class="grid-45 mobile-grid-45 grid-parent">
+                    <div class="grid-30 mobile-grid-30">
+                        <div id="menuwrapper">
+                            <div id="logowrapper" class="gradient">
+                                First
+                            </div>
+                            <div id="navwrapper" class="hidenav">
+                                <div class="menucaret"></div>
+                                <div class="menutooltip"></div>
+                                <ul id="nav" class="submenu">
+                                    <li class="menuitem">
+                                        <a href="#" data-menuitem="first"><span class="numbertitle">1</span><span class="menutext">Get answers for general questions</span></a>
+                                    </li>
+                                    <li class="menuitem">
+                                        <a href="#" data-menuitem="second"><span class="numbertitle">2</span><span class="menutext">Find people like you and get useful information</span></a>
+                                    </li>
+                                    <li class="menuitem">
+                                        <a href="#" data-menuitem="third"><span class="numbertitle">3</span><span class="menutext">Find a healthcare professionaland consult him</span></a>
+                                    </li>
+                                    <li class="menuitem">
+                                        <a href="#" data-menuitem="fourth"><span class="numbertitle">4</span><span class="menutext">Waiting for recovery and enjoy better life</span></a>
+                                    </li>
+                                </ul>
+                                <div class="menufooter">
+                                    how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-70 mobile-grid-70 pull-15">
+                        <div class="headersearchbar">
+                            <form>
+                                <div class="menusearchbox">
+                                    <input type="text" maxlength="1000" name="search" autocomplete="off" class="field" placeholder="Find answers of your interest">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- middle area -->
+                <div id="homepage" class="grid-10 mobile-grid-10 grid-parent">
+                    <div class="healthystate">
+                        <div class='logoimg'></div>
+                        <div class="statebar hidenav">
+                            <div class='buttonhere'>
+                                <a class="homebutton gradient">Home</a>
+                            </div>
+                            <hr class="homehr">
+                            <h3 title='header,here'>
+                                Tell us your healthystate,find people like you
+                            </h3>
+                            <hr class="homehr">
+                            <div class='slidercontainer'>
+                                <div class='physical' title='Drag to set your self-assessed physical condition.'>
+                                    <span class='slidertitle' title='Physical state'><em class='titlefirstletter'>P</em> <span class='titlepart'>hysical state</span></span> <span class='slidervalue' title='Self-assessment of physical condition'></span>
+                                    <div class='physicalslider'></div>
+                                </div>
+                                <div class='mental' title='Drag to set your self-assessed mental condition'>
+                                    <span class='slidertitle'><em class='titlefirstletter'>M</em> <span class='titlepart'>ental state:</span></span> <span class='slidervalue' title='Self-assessment of mental condition'></span>
+                                    <div class='mentalslider'></div>
+                                </div>
+                                <div class='social' title='Drag to set your self-assessed social condition'>
+                                    <span class='slidertitle'><em class='titlefirstletter'>S</em> <span class='titlepart'>ocial state:</span></span>
+                                    <div class='socialslider'></div>
+                                </div>
+                                <div class='clear'></div>
+                                <div class='scoremonitor'>
+                                    <h4 class='colortitle' title='Calculated Healthy Color'>
+                                        Statistics
+                                    </h4>
+                                    <div class='colorspace'>
+                                        <div class='rank'>
+                                            <div class='divcenter'>
+                                                <em class='ranknum'>#783</em> <em class='rankclass'>week rank</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <form name="stateform" id="stateform">
+                                <input type='hidden' name='physicalstate'> <input type='hidden' name='mentalstate'> <input type='hidden' name='socialstate'> 
+                                <textarea name='stateword' id='stateword' class='stateword' placeholder='say anything about your healthy state.Find people like you.' cols='36' rows='4' maxlength='140' required="" title='ay anything about your healthy state.Find people like you'></textarea> <a class="submit">Find people like you</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="userpanel" class="grid-45 mobile-grid-45 grid-parent">
+                    <div class="panelcontainer">
+                        <span class="versionbutton">General</span>
+                        <div id="versionwrapper" class="hidenav">
+                            <div class="menucaret"></div>
+                            <ul class="submenu">
+                                <li class="menuitem">
+                                    <a href="#">General</a>
+                                </li>
+                                <li class="menuitem">
+                                    <a href="#">Patients Related</a>
+                                </li>
+                                <li class="menuitem">
+                                    <a href="#">Healthcare Giver</a>
+                                </li>
+                            </ul>
+                            <div class="menufooter">
+                                how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients
+                            </div>
+                        </div><span class="versionbutton"><img alt='profileimg' src="images/uprofile.jpg"></span>
+                    </div>
+                </div>
+            </header><!-- the content -->
+            <div id="content" role="main" class="grid-75 mobile-grid-100 grid-parent">
+                <!-- left content column -->
+                <div id="questions" class="grid-75 mobile-grid-75 grid-parent">
+                    <div id="questionlib" class="grid-100 mobile-grid-100">
+                        questionlib
+                    </div>
+                    <div id="hotquestions" class="grid-100 mobile-grid-100">
+                        hotquestions
+                    </div>
+                    <div id="featuredquestions" class="grid-100 mobile-grid-100">
+                        featuredquestions
+                    </div>
+                </div><!-- right content column -->
+                <div id="recommend" class="grid-25 mobile-grid-25">
+                    "recommend"
+                </div>
+            </div><!-- the sidebar -->
+            <aside class="grid-25">
+                <section role="complementary">
+                    <div class="sideBlock unSung">
+                        <h1>
+                            Unsung heroes...
+                        </h1>
+                    </div>
+                </section>
+                <section role="complementary">
+                    <div class="sideBlock overHyped">
+                        <h1>
+                            Overhyped nonsense...
+                        </h1>
+                    </div>
+                </section>
+            </aside><!-- the footer -->
+            <footer role="contentinfo" class=" grid-100 mobile-grid-100">
+                <p>
+                    Note: our opinion is absolutely correct. You are wrong, even if you think you are right. That??s a fact. Deal with it. <span>Made by <a href="http://benfrain.com">benfrain.com</a>.</span> <span>Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP file</a></span>
+                </p>
+            </footer>
+        </div><!-- content here -->
+        <div class='tooltipcontent'	style='display:none'>
+			<div id='dragtip'>
+				<em>Drag</em> to assess your healthy state.
 
-					</head>
-					<body id="home">
-						<div class="headerbackground"></div>
-						<!--   <div id="headerbackground"></div> -->
-						<div id="container" class="grid-container">
-							<!-- the header and navigation -->
-							<header role="banner" class="group grid-100 mobile-grid-100 grid-parent">
+			</div>
+        </div>
+        <script type="text/javascript" src="javascripts/jquery-1.9.1.js">
+</script> 
 
-								<!-- LOGO here -->
-								<div id="logo-menu-search" class="grid-45 mobile-grid-45 grid-parent">
+<script type="text/javascript" src="javascripts/jquery.nouislider.js">
+</script>
 
-									<div class="grid-30 mobile-grid-30 ">
-										<div id="menuwrapper">
-											<div id="logowrapper" class="gradient">
-												First
-											</div>
-
-											<div id="navwrapper" class="hidenav" >
-												<div class="menucaret"></div>
-												<div class="menutooltip"></div>
-												<ul id="nav" class="submenu">
-													<li class="menuitem"><a href="#" data-menuitem="first"><span class="numbertitle">1</span><span class="menutext">Get answers for  general questions</span></a> <span class="stroke" title='You have earned 27gold,23silver,322bronze,2324iron medals,con pro you! ^_^'></span></li>
-													<li class="menuitem"><a href="#" data-menuitem="second"><span class="numbertitle">2</span><span class="menutext">Find people like you and get useful information</span></a> <span class="box"></span></li>
-													<li class="menuitem"><a href="#" data-menuitem="third"><span class="numbertitle">3</span><span class="menutext">Find a healthcare professionaland consult him</span></a> <span class="box"></span></li>
-													<li class="menuitem"><a href="#" data-menuitem="fourth"><span class="numbertitle">4</span><span class="menutext">Waiting for recovery and enjoy better life</span></a>  <span class="stroke"></span></li>
-												</ul>  
-
-												<div class="menufooter">how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients  </div> 
-											</div> 
-
-										</div> 
-									</div>
-									
-									<div class="grid-70 mobile-grid-70 pull-15 ">
-										<div class="headersearchbar">
-											<form>
-												<div class="menusearchbox"> <input type="text" maxlength="1000" name="search" autocomplete="off" class="field" placeholder="Find answers of your interest" />
-													<button class="searchbtn submit" type="submit" ></button> 
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-
-								<!-- middle area -->
-								<div id="homepage" class="grid-10 mobile-grid-10 grid-parent">
-									<div class="healthystate">
-										<div class='logoimg'></div>
-
-										<div class="statebar hidenav">
-
-											<div class='buttonhere'>
-												<a class="homebutton gradient">Home</a>
-											</div>
-											<hr class="homehr">
-											<h3>Tell us your healthystate,find people like you</h3>
-											<hr class="homehr">
-											<div class='slidercontainer'>
-
-													<div class='physical' title='Drag to set your self-assessed physical condition.'>
-														<span class='slidertitle' title='Physical state'>
-															<em class='titlefirstletter'>P</em>
-														<span class='titlepart'>hysical state</span></span> 
-														<span class='slidervalue' title='Self-assessment of physical condition'>
-															<em class='value'></em>
-															<span class='statelevel' ></span></span>
-														<div class='physicalslider'></div>
-													</div>
-
-													<div class='mental' title='Drag to set your self-assessed mental condition'>
-														<span class='slidertitle'><em class='titlefirstletter'>M</em>
-														<span class='titlepart'>ental state:</span>
-													</span> 
-														<span class='slidervalue' title='Self-assessment of mental condition'><em class='value'></em>
-															<span class='statelevel'></span></span>
-															<div class='mentalslider'></div>
-															
-														</div>
-														<div class='social' title='Drag to set your self-assessed social condition'><span class='slidertitle'><em class='titlefirstletter'>S</em>
-																<span class='titlepart'>ocial state:</span></span> 
-															<span class='slidervalue' title='Self-assessment of social  condition'>
-																<em class='value'></em><span class='statelevel'></span></span>
-															<div class='socialslider'></div>
-														</div>
-
-															<div class='clear'></div>
-															<div class='scoremonitor'>
-																<h4 class='colortitle' title='Calculated Healthy Color'>Statistics
-															 </h4>
-																<div class='colorspace'>
-																	<div class='rank'><div class='divcenter'><em class='ranknum'>#783</em>
-																	<em class='rankclass'>week rank</em></div></div></div>
-															</div>
-
-															
-														</div>
-
-														<form name="stateform">
-															<input type='hidden' name='physicalstate'>
-															<input type='hidden' name='mentalstate'>
-															<input type='hidden' name='socialstate'>
-															<textarea name='stateword' id='stateword' class='stateword' 
-															placeholder='say anything about your healthy state.Find people like you.' cols='36' 
-															rows='4' maxlength='140' required title='ay anything about your healthy state.Find people like you'></textarea>
-															 
-															<a  class="submit" >Find people like you</a>
-														 
-														</form>
-										</div> 
-									</div>
-								</div>
-
-											<div id="userpanel" class="grid-45 mobile-grid-45 grid-parent">
-												<div class="panelcontainer">
-													<span class="versionbutton">  General </span>
-													<div id="versionwrapper" class="hidenav" >
-														<div class="menucaret"></div>
-														<ul class="submenu">
-															<li class="menuitem"><a href="#">General</a></li>
-															<li class="menuitem"><a href="#">Patients Related</a></li>
-															<li class="menuitem"><a href="#">Healthcare Giver</a></li>
-														</ul>  
-														<div class="menufooter">how we works &nbsp;-&nbsp; doctors&nbsp; --&nbsp;patients  </div> 
-													</div> 
-													<span class="versionbutton"><img alt='profileimg' src="images/uprofile.jpg"></span>
-												</div>	
-
-
-											</div>
-										</header>
-
-										<!-- the content -->
-										<div id="content" role="main"
-										class="grid-75 mobile-grid-100 grid-parent">
-										<!-- left content column -->
-										<div id="questions" class="grid-75 mobile-grid-75 grid-parent">
-											<div id="questionlib" class="grid-100 mobile-grid-100">
-												questionlib</div>
-												<div id="hotquestions" class="grid-100 mobile-grid-100">
-													hotquestions</div>
-													<div id="featuredquestions" class="grid-100 mobile-grid-100">
-														featuredquestions</div>
-													</div>
-													<!-- right content column -->
-													<div id="recommend" class="grid-25 mobile-grid-25">"recommend"
-													</div>
-												</div>
-												<!-- the sidebar -->
-
-												<aside class="grid-25">
-													<section role="complementary">
-														<div class="sideBlock unSung">
-															<h1>Unsung heroes...</h1>
-														</div>
-													</section>
-													<section role="complementary">
-														<div class="sideBlock overHyped">
-															<h1>Overhyped nonsense...</h1>
-														</div>
-													</section>
-												</aside>
-
-
-												<!-- the footer -->
-												<footer role="contentinfo" class=" grid-100 mobile-grid-100">
-													<p>
-														Note: our opinion is absolutely correct. You are wrong, even if you
-														think you are right. That??s a fact. Deal with it. <span> Made
-														by <a href="http://benfrain.com">benfrain.com</a>.
-													</span><span> Site code as <a href="/RWDHTML5CSS3_ATWI_CODE.zip">ZIP
-													file</a></span>
-												</p>
-											</footer>
-
-										</div>
-
-
-										<!-- content here -->
-										<script type="text/javascript" src="javascripts/jquery-1.9.1.js"></script>
-										<script type="text/javascript" src="javascripts/jquery.nouislider.js"></script>
-										<script type="text/javascript" src="javascripts/all.js"></script>
-
-										
-					</body>
-
-					</html>
+<script type="text/javascript" src="javascripts/all.js">
+</script> <!-- All kinds of tooltip here -->
+    </body>
+</html>
