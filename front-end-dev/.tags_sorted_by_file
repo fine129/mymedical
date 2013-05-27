@@ -1,11 +1,5 @@
-classifyNumber	index.html	/^		  function classifyNumber (n,arr) {$/;"	f
-dataLevel	index.html	/^		  function dataLevel(num,val_o,content_o,original_c) {$/;"	f
-hexFromRGB	index.html	/^		function hexFromRGB(r, g, b) {$/;"	f
-hidenav	index.html	/^							function hidenav(){$/;"	f
-hidestatebar	index.html	/^			function hidestatebar() {$/;"	f
-refreshColorSpace	index.html	/^		  function refreshColorSpace(r,g,b) {$/;"	f
-shownav	index.html	/^							function shownav(){$/;"	f
-showstatebar	index.html	/^							function showstatebar() {$/;"	f
+classifyNumber	javascripts\all.js	/^              function classifyNumber (n,arr) {$/;"	f
+dataLevel	javascripts\all.js	/^              function dataLevel(num,val_o,content_o,original_c) {$/;"	f
 fn.hoverIntent	javascripts\all.js	/^(function($) {$/;"	f
 fn.hoverIntent.cfg.interval	javascripts\all.js	/^            interval: 100,$/;"	p
 fn.hoverIntent.cfg.sensitivity	javascripts\all.js	/^            sensitivity: 7,$/;"	p
@@ -14,6 +8,13 @@ fn.hoverIntent.compare	javascripts\all.js	/^        var compare = function(ev,ob
 fn.hoverIntent.delay	javascripts\all.js	/^        var delay = function(ev,ob) {$/;"	f
 fn.hoverIntent.handleHover	javascripts\all.js	/^        var handleHover = function(e) {$/;"	f
 fn.hoverIntent.track	javascripts\all.js	/^        var track = function(ev) {$/;"	f
+hexFromRGB	javascripts\all.js	/^            function hexFromRGB(r, g, b) {$/;"	f
+hidenav	javascripts\all.js	/^                                function hidenav(){$/;"	f
+hidestatebar	javascripts\all.js	/^                function hidestatebar() {$/;"	f
+refreshColorSpace	javascripts\all.js	/^              function refreshColorSpace(r,g,b) {$/;"	f
+shownav	javascripts\all.js	/^                                function shownav(){$/;"	f
+showstatebar	javascripts\all.js	/^                                function showstatebar() {$/;"	f
+state	javascripts\all.js	/^              var state = ['worst','bad','not good', 'not bad', 'good' ,'best'],$/;"	v
 Animation	javascripts\jquery-1.9.1.js	/^function Animation( elem, properties, options ) {$/;"	f
 Tween	javascripts\jquery-1.9.1.js	/^Tween.prototype = {$/;"	c
 Tween	javascripts\jquery-1.9.1.js	/^function Tween( elem, options, prop, end, easing ) {$/;"	f

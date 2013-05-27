@@ -45,7 +45,7 @@ ajaxExtend	.\javascripts\jquery-1.9.1.js	/^function ajaxExtend( target, src ) {$
 ajaxHandleResponses	.\javascripts\jquery-1.9.1.js	/^function ajaxHandleResponses( s, jqXHR, responses ) {$/;"	f
 augmentWidthOrHeight	.\javascripts\jquery-1.9.1.js	/^function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {$/;"	f
 buildParams	.\javascripts\jquery-1.9.1.js	/^function buildParams( prefix, obj, traditional, add ) {$/;"	f
-classifyNumber	.\index.html	/^		  function classifyNumber (n,arr) {$/;"	f
+classifyNumber	.\javascripts\all.js	/^              function classifyNumber (n,arr) {$/;"	f
 cloneCopyEvent	.\javascripts\jquery-1.9.1.js	/^function cloneCopyEvent( src, dest ) {$/;"	f
 constructor	.\javascripts\jquery-slider1103.js	/^	constructor.prototype = $.widget.extend( basePrototype, {$/;"	c
 createActiveXHR	.\javascripts\jquery-1.9.1.js	/^function createActiveXHR() {$/;"	f
@@ -55,7 +55,7 @@ createStandardXHR	.\javascripts\jquery-1.9.1.js	/^function createStandardXHR() {
 createTweens	.\javascripts\jquery-1.9.1.js	/^function createTweens( animation, props ) {$/;"	f
 css_defaultDisplay	.\javascripts\jquery-1.9.1.js	/^function css_defaultDisplay( nodeName ) {$/;"	f
 curCSS	.\javascripts\jquery-1.9.1.js	/^	curCSS = function( elem, name, _computed ) {$/;"	f
-dataLevel	.\index.html	/^		  function dataLevel(num,val_o,content_o,original_c) {$/;"	f
+dataLevel	.\javascripts\all.js	/^              function dataLevel(num,val_o,content_o,original_c) {$/;"	f
 dataType	.\javascripts\jquery-1.9.1.js	/^		var dataType,$/;"	v
 defaultPrefilter	.\javascripts\jquery-1.9.1.js	/^function defaultPrefilter( elem, props, opts ) {$/;"	f
 disableScript	.\javascripts\jquery-1.9.1.js	/^function disableScript( elem ) {$/;"	f
@@ -87,10 +87,10 @@ getAll	.\javascripts\jquery-1.9.1.js	/^function getAll( context, tag ) {$/;"	f
 getStyles	.\javascripts\jquery-1.9.1.js	/^	getStyles = function( elem ) {$/;"	f
 getWidthOrHeight	.\javascripts\jquery-1.9.1.js	/^function getWidthOrHeight( elem, name, extra ) {$/;"	f
 getWindow	.\javascripts\jquery-1.9.1.js	/^function getWindow( elem ) {$/;"	f
-hexFromRGB	.\index.html	/^		function hexFromRGB(r, g, b) {$/;"	f
-hidenav	.\index.html	/^							function hidenav(){$/;"	f
+hexFromRGB	.\javascripts\all.js	/^            function hexFromRGB(r, g, b) {$/;"	f
+hidenav	.\javascripts\all.js	/^                                function hidenav(){$/;"	f
 hidenav	.\test.html	/^	function hidenav(){$/;"	f
-hidestatebar	.\index.html	/^			function hidestatebar() {$/;"	f
+hidestatebar	.\javascripts\all.js	/^                function hidestatebar() {$/;"	f
 hooks.empty.fire	.\javascripts\jquery-1.9.1.js	/^			hooks.empty.fire = function() {$/;"	f
 inspectPrefiltersOrTransports	.\javascripts\jquery-1.9.1.js	/^function inspectPrefiltersOrTransports( structure, options, originalOptions, jqXHR ) {$/;"	f
 inspectPrefiltersOrTransports.inspect	.\javascripts\jquery-1.9.1.js	/^	function inspect( dataType ) {$/;"	f
@@ -132,17 +132,18 @@ percentage.is	.\javascripts\jquery.nouislider.js	/^			is : function (range, valu
 position	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
 propFilter	.\javascripts\jquery-1.9.1.js	/^function propFilter( props, specialEasing ) {$/;"	f
 r20	.\javascripts\jquery-1.9.1.js	/^var r20 = \/%20\/g,$/;"	v
-refreshColorSpace	.\index.html	/^		  function refreshColorSpace(r,g,b) {$/;"	f
+refreshColorSpace	.\javascripts\all.js	/^              function refreshColorSpace(r,g,b) {$/;"	f
 restoreScript	.\javascripts\jquery-1.9.1.js	/^function restoreScript( elem ) {$/;"	f
 return	.\javascripts\jquery-1.9.1.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	c
 return.init	.\javascripts\jquery-1.9.1.js	/^	return new Tween.prototype.init( elem, options, prop, end, easing );$/;"	m
 setGlobalEval	.\javascripts\jquery-1.9.1.js	/^function setGlobalEval( elems, refElements ) {$/;"	f
 setPositiveNumber	.\javascripts\jquery-1.9.1.js	/^function setPositiveNumber( elem, value, subtract ) {$/;"	f
 showHide	.\javascripts\jquery-1.9.1.js	/^function showHide( elements, show ) {$/;"	f
-shownav	.\index.html	/^							function shownav(){$/;"	f
+shownav	.\javascripts\all.js	/^                                function shownav(){$/;"	f
 shownav	.\test.html	/^	function shownav(){$/;"	f
-showstatebar	.\index.html	/^							function showstatebar() {$/;"	f
+showstatebar	.\javascripts\all.js	/^                                function showstatebar() {$/;"	f
 sibling	.\javascripts\jquery-1.9.1.js	/^function sibling( cur, dir ) {$/;"	f
+state	.\javascripts\all.js	/^              var state = ['worst','bad','not good', 'not bad', 'good' ,'best'],$/;"	v
 vendorPropName	.\javascripts\jquery-1.9.1.js	/^function vendorPropName( style, name ) {$/;"	f
 visibility	.\javascripts\jquery-1.9.1.js	/^	cssShow = { position: "absolute", visibility: "hidden", display: "block" },$/;"	p
 visible	.\javascripts\jquery-slider1103.js	/^function visible( element ) {$/;"	f
